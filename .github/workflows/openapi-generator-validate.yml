@@ -1,0 +1,17 @@
+name: Run OpenAPI Generator validations
+on: [pull_request, push, workflow_dispatch]
+jobs:
+  openapi-generator-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bundle Spec
+        uses: docker://redocly/cli:latest
+        with:
+          args: bundle --dereferenced openapi.yaml -o bundle.yaml
+      - name: OpenAPI Generator Validate
+        uses: docker://openapitools/openapi-generator-cli:latest
+        with:
+          args: validate -i bundle.yaml
+        env:
+          JAVA_OPTS: -DmaxYamlCodePoints=99999999 # Required or else it will run out of memory
