@@ -1,0 +1,23 @@
+name: Generate a client with OpenAPI Generator
+on: [pull_request, push, workflow_dispatch]
+jobs:
+  openapi-generator-generate-go:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Bundle Spec
+        uses: docker://redocly/cli:latest
+        with:
+          args: bundle --dereferenced openapi.yaml -o bundle.yaml
+      - name: OpenAPI Generator Generate
+        uses: docker://openapitools/openapi-generator-cli:latest
+        with:
+          # We need to rename some fields that will clash with one of the generated functions beginning with "Has".
+          args: generate -i bundle.yaml -g go -o client-go --global-property apiTests=false --name-mappings hasNetworks=hasNetworksRenamed,hasPool=hasPoolRenamed,hasPrivateKey=hasPrivateKeyRenamed,hasConfig=hasConfigRenamed
+        env:
+          JAVA_OPTS: -DmaxYamlCodePoints=99999999 # Required or else openapi-generator will run out of memory
+      - name: Go Build
+        uses: docker://golang:alpine
+        with:
+          entrypoint: sh
+          args: -c "cd client-go && go build"
