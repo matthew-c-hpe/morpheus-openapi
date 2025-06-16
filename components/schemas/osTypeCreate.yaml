@@ -7,7 +7,6 @@ required:
 properties: 
   name:
     type: string
-    nullable: false
     description: |
       The name of the osType.
   description:
@@ -16,12 +15,10 @@ properties:
       The description of the osType. 
   platform:
     type: string
-    nullable: false
     description: |
       The platform of the osType. 
   code:
     type: string
-    nullable: false
     description: |
       The code morph uses as an identifier
   category:
@@ -51,12 +48,10 @@ properties:
   bitCount:
     type: integer
     format: int64
-    nullable: false
     description: |
       The bitCount/architecture of the osType.
   cloudInitVersion:
     type: string
-    nullable: false
     description: |
       The version of CloudInit being used.
   installAgent:

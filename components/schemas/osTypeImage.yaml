@@ -3,16 +3,13 @@ properties:
   id: 
     type: integer
     format: int64
-    nullable: false
   virtualImageId:
     type: integer
     format: int64
-    nullable: false
     description: |
       The id of the virtual image.
   virtualImageName:
     type: string
-    nullable: false
     description: |
       The name of the virtual image. 
   account:
