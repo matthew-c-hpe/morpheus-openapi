@@ -6,20 +6,16 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   accountId: 
     type: integer
     format: int64
   groupSource: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enabled: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   syncSource: 
     type: string
   visibility: 
@@ -27,8 +23,7 @@ properties:
   active: 
     type: boolean
   zone: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -46,16 +41,13 @@ properties:
         name: 
           type: string
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         externalId: 
           type: string
         iacId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         zone: 
-          type: object
-          nullable: true
+          type: [ object, 'null' ]
           properties: 
             id: 
               type: integer
@@ -63,8 +55,7 @@ properties:
             name: 
               type: string
         zonePool: 
-          type: object
-          nullable: true
+          type: [ object, 'null' ]
           properties: 
             id: 
               type: integer
@@ -74,11 +65,9 @@ properties:
         status: 
           type: string
         priority: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         groupLayer: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
   rules: 
     type: array
     items: 
@@ -88,15 +77,13 @@ properties:
           type: integer
           format: int64
         name: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         ruleType: 
           type: string
         customRule: 
           type: boolean
         instanceTypeId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         direction: 
           type: string
         policy: 
@@ -104,35 +91,27 @@ properties:
         sourceType: 
           type: string
         source: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         sourceGroup: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         sourceTier: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         portRange: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         protocol: 
           type: string
         destinationType: 
           type: string
         destination: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         destinationGroup: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         destinationTier: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         externalId: 
           type: string
         enabled: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
   tenants: 
     type: array
     items: 
@@ -165,8 +144,7 @@ properties:
             type: integer
             format: int64
       sites: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
           properties: 
@@ -178,8 +156,7 @@ properties:
             default: 
               type: boolean
       plans: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
           properties: 

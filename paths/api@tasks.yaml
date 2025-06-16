@@ -128,8 +128,7 @@ post:
                   type: object
                   description: Map of options specific to each `task type`. eg. script
                 resultType:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                   enum: 
                     - exitCode
                     - keyValue

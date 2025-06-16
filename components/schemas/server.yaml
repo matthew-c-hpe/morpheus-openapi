@@ -6,14 +6,11 @@ properties:
   uuid: 
     type: string
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   internalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalUniqueId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   name: 
     type: string
   externalName: 
@@ -46,8 +43,7 @@ properties:
         type: integer
         format: int64
       username: 
-        type: string
-    nullable: true
+        type: [ string, 'null' ]
   zone: 
     type: object
     properties: 
@@ -60,15 +56,12 @@ properties:
     type: object
     properties: 
       id: 
-        type: integer
+        type: [ integer, 'null' ]
         format: int64
-        nullable: true
       code: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       name: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
   computeServerType: 
     type: object
     properties: 
@@ -86,8 +79,7 @@ properties:
   visibility: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   zoneId: 
     type: integer
     format: int64
@@ -95,50 +87,38 @@ properties:
     type: integer
     format: int64
   resourcePoolId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   folderId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   sshHost: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sshPort: 
     type: integer
     format: int64
   externalIp: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   internalIp: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   volumeId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   platform: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   platformVersion: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sshUsername: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sshPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sshPasswordHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sshKeyPair:
     type: object
     properties:
       id:
-        type: integer
+        type: [ integer, 'null' ]
         format: int64
-    nullable: true
   osDevice: 
     type: string
   osType: 
@@ -213,38 +193,30 @@ properties:
   status: 
     type: string
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   errorMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   statusDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   statusPercent: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   statusEta: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   powerState: 
     type: string
   agentInstalled: 
     type: boolean
   lastAgentUpdate: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   agentVersion: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   maxCores: 
     type: integer
     format: int64
   coresPerSocket: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   maxMemory: 
     type: integer
     format: int64
@@ -252,13 +224,11 @@ properties:
     type: integer
     format: int64
   maxCpu: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   maxGpus: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   manageInternalFirewall:
     type: boolean
   enableLogs:
@@ -268,8 +238,7 @@ properties:
   hourlyPrice: 
     type: number
   sourceImage: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -279,8 +248,7 @@ properties:
       name: 
         type: string
   serverOs: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -290,15 +258,13 @@ properties:
       name: 
         type: string
       description: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       vendor: 
         type: string
       category: 
         type: string
       osFamily: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       osVersion: 
         type: string
       bitCount: 
@@ -345,42 +311,31 @@ properties:
           type: integer
           format: int64
         refType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         refId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         name: 
           type: string
         internalId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         externalId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         uniqueId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         publicIpAddress: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         publicIpv6Address: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         ipAddress: 
           type: string
         ipv6Address: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         ipSubnet: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         ipv6Subnet: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         dhcp: 
           type: boolean
         active: 
@@ -398,17 +353,13 @@ properties:
             name: 
               type: string
         subnet: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         networkGroup: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         networkPosition: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         networkPool: 
-          type: object
-          nullable: true
+          type: [ object, 'null' ]
           properties:
             id:
               type: integer
@@ -416,11 +367,9 @@ properties:
             name:
               type: string
         networkDomain: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         type: 
-          type: object
-          nullable: true
+          type: [ object, 'null' ]
           properties: 
             id: 
               type: integer
@@ -430,26 +379,21 @@ properties:
             name: 
               type: string
         ipMode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         macAddress: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
   labels: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   tags: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   enabled: 
     type: boolean
   tagCompliant: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   containers: 
     type: array
     items:
@@ -459,22 +403,19 @@ properties:
     type: object
     properties: 
       poolProviderType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       isVpcSelectable: 
         type: boolean
       smbiosAssetTag: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       isEC2: 
         type: boolean
       resourcePoolId: 
         type: integer
         format: int64
       hostId:
-        type: integer
+        type: [ integer, 'null' ]
         format: int64
-        nullable: true
       createUser: 
         oneOf:
           - type: boolean
@@ -483,30 +424,23 @@ properties:
             - on
             - off
       nestedVirtualization: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       vmwareFolderId: 
         type: string
       noAgent: 
         type: boolean
       powerScheduleType:
-        type: integer
+        type: [ integer, 'null' ]
         format: int64
-        nullable: true
   guestConsolePreferred: 
     type: boolean
   guestConsoleType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsoleUsername: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsolePassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsolePasswordHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsolePort: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

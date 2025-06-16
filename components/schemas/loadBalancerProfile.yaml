@@ -38,43 +38,33 @@ internalId:
 externalId: 
   type: string
 proxyType: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 redirectRewrite: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 persistenceType: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 sslEnabled: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 sslCert: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 accountCertificate: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 enabled: 
   type: boolean
 redirectUrl: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 insertXforwardedFor: 
   type: boolean
 persistenceCookieName: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 persistenceExpiresIn: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 editable: 
   type: boolean
 config: 
   type: object
 createdBy: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 dateCreated: 
   type: string
   format: date-time

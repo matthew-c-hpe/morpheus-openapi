@@ -2,8 +2,7 @@
 type: object
 properties:
   envs:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
       properties: 
@@ -21,8 +20,7 @@ properties:
       - name
       - value
   readOnlyEnvs:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
       properties:
@@ -40,8 +38,7 @@ properties:
       - name
       - value
   importedEnvs:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
       properties:

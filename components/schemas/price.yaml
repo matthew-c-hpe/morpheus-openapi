@@ -14,39 +14,29 @@ properties:
   priceUnit: 
     type: string
   additionalPriceUnit: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   price: 
-    type: number
-    nullable: true
+    type: [ number, 'null' ]
   customPrice: 
-    type: number
-    nullable: true
+    type: [ number, 'null' ]
   markupType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   markup: 
-    type: number
-    nullable: true
+    type: [ number, 'null' ]
   markupPercent: 
-    type: number
-    nullable: true
+    type: [ number, 'null' ]
   cost: 
-    type: number
-    nullable: true
+    type: [ number, 'null' ]
   currency: 
     type: string
   incurCharges: 
     type: string
   platform: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   software: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   volumeType: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -56,8 +46,7 @@ properties:
       name: 
         type: string
   datastore: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -65,8 +54,6 @@ properties:
       name: 
         type: string
   crossCloudApply: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   account: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

@@ -1,0 +1,5 @@
+type: [ string, 'null' ]
+enum:
+  - on
+  - off
+default: off

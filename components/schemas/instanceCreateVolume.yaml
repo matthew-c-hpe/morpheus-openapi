@@ -21,22 +21,18 @@ properties:
     description: Size of the LV to be created in GBs.  Uses default from service plan.
     example: 5
   sizeId:
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
     description: Can be used to select pre-existing LV choices from Morpheus.
-    nullable: true
   storageType:
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
     description: Identifier for LV type
-    nullable: true
   datastoreId:
     anyOf:
-      - type: string
-        nullable: true
-      - type: integer
+      - type: [ string, 'null' ]
+      - type: [ integer, 'null' ]
         format: int64
-        nullable: true
     description: The ID of the specific datastore. Auto selection can be specified as auto or autoCluster (for clusters).
   controllerMountPoint:
     type: string

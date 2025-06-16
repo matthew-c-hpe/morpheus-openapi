@@ -5,8 +5,7 @@ properties:
   username: 
     type: string
   password: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   datacenter: 
     type: string
   cluster: 
@@ -24,19 +23,15 @@ properties:
   enableVnc: 
     type: string
   enableDiskTypeSelection: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enableNetworkTypeSelection: 
     type: string
   diskStorageType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   applianceUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   datacenterName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   networkServer.id: 
     type: string
       # oneOf:
@@ -55,46 +50,32 @@ properties:
   securityMode: 
     type: string
   certificateProvider: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   backupMode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   replicationMode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dnsIntegrationId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configCmdbId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configManagementId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configCmId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   securityServer: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serviceRegistryId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   kubeUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   apiVersion: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   datacenterId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configCmdbDiscovery: 
     type: boolean
   distributedWorkerId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   passwordHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

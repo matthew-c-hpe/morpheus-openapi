@@ -6,20 +6,17 @@ properties:
   name: 
     type: string
   code: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   type: 
     type: string
   visibility: 
     type: string
   storageSize: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   freeSpace: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   drsEnabled: 
     type: boolean
   active: 
@@ -78,8 +75,7 @@ properties:
         defaultTarget:
           type: boolean
   datastores: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
   locations:
@@ -116,8 +112,7 @@ properties:
             type: integer
             format: int64
       sites:
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
           properties:
@@ -129,8 +124,7 @@ properties:
             default:
               type: boolean
       plans:
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
           properties:

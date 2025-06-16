@@ -13,8 +13,7 @@ properties:
         refName: 
           type: string
         subRefName: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         stateDate: 
           type: string
           format: date-time
@@ -62,8 +61,7 @@ properties:
             name: 
               type: string
             value: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             sensitive: 
               type: boolean
             type: 
@@ -84,9 +82,8 @@ properties:
               type: string
             name: 
               oneOf:
-                - type: string
+                - type: [ string, 'null' ]
                 - type: object
-                  nullable: true
             type: 
               type: string
   output: 

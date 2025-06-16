@@ -9,20 +9,16 @@ properties:
     type: integer
     format: int64
   publicKey: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   hasPrivateKey: 
     type: boolean
   privateKeyHash:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   privateKey:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Only present in response to generate
   fingerprint: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time

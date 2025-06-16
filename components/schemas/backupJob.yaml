@@ -18,16 +18,13 @@ properties:
         type: string
         description: Schedule Name
       cron: 
-        type: string
+        type: [ string, 'null' ]
         description: Schedule Cron Expression
-    nullable: true
   retentionCount: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   externalId:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   backupProvider: 
     type: object
     properties: 
@@ -36,9 +33,8 @@ properties:
         format: int64
         description: Backup Provider ID
       name: 
-        type: string
+        type: [ string, 'null' ]
         description: Backup Provider Name
-    nullable: true
   backupRespository: 
     type: object
     properties: 
@@ -47,17 +43,14 @@ properties:
         format: int64
         description: Backup Respository ID
       name: 
-        type: string
+        type: [ string, 'null' ]
         description: Backup Respository Name
-    nullable: true
   cronExpression: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Cron Expression
   nextFire: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
     description: Next Fire is the datetime the job will next occur on according to its schedule
   source:
     type: string

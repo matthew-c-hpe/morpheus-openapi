@@ -20,34 +20,25 @@ account:
     name: 
       type: string
 category: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 code: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 name: 
   type: string
 displayName: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 internalId: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 externalId: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 dnsDomain: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 dnsSearchPath: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 hostPrefix: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 httpProxy: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 dnsServers: 
   type: array
   items: 
@@ -59,17 +50,13 @@ dnsSuffixList:
 dhcpServer: 
   type: boolean
 dhcpIp: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 gateway: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 netmask: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 subnetAddress: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 ipCount: 
   type: integer
   format: int64
@@ -79,26 +66,19 @@ freeCount:
 poolEnabled: 
   type: boolean
 tftpServer: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 bootFile: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 refType: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 refId: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 parentType: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 parentId: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 poolGroup: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 ipRanges: 
   type: array
   items: 
@@ -108,20 +88,15 @@ ipRanges:
         type: integer
         format: int64
       startAddress: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       endAddress: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       internalId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       externalId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       description: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       addressCount: 
         type: integer
         format: int64
@@ -134,9 +109,7 @@ ipRanges:
         type: string
         format: date-time
       cidr:
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       cidrIPv6:
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
 

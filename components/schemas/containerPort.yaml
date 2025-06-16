@@ -31,8 +31,6 @@ properties:
   link:
     type: boolean
   externalIp:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   internalIp:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

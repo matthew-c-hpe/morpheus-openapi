@@ -36,8 +36,7 @@ get:
                 isOwner:
                   type: boolean
                 parentDirectory:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 archiveFiles:
                   type: array
                   items:

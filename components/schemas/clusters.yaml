@@ -6,45 +6,34 @@ properties:
   name: 
     type: string
   code: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   visibility: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   location: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enabled: 
     type: boolean
   serviceUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serviceHost: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   servicePath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serviceHostname: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   servicePort: 
     type: integer
     format: int64
   serviceUsername: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   servicePassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   servicePasswordHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serviceToken: 
     type: string
   serviceTokenHash: 
@@ -54,27 +43,21 @@ properties:
   serviceAccessHash: 
     type: string
   serviceCert: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serviceCertHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serviceVersion: 
     type: string
   searchDomains: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enableInternalDns: 
     type: boolean
   internalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   datacenterId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
     type: string
   statusDate: 
@@ -108,8 +91,7 @@ properties:
   autoRecoverPowerState:
     type: boolean
   serviceEntry: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   createdBy: 
     type: object
     properties: 
@@ -119,8 +101,7 @@ properties:
       username: 
         type: string
   userGroup: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   layout: 
     type: object
     properties: 

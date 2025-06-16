@@ -5,18 +5,15 @@ properties:
     type: string
     description: Name
   serviceUrl: 
-    type: string
+    type: [ string, 'null' ]
     description: URL
-    nullable: true
     example: "https://bluecat-server"
   serviceUsername: 
-    type: string
+    type: [ string, 'null' ]
     description: Username
-    nullable: true
   servicePassword: 
-    type: string
+    type: [ string, 'null' ]
     description: Password
-    nullable: true
   visibility: 
     type: string
     description: Visibility - Set to public to allow all tenants

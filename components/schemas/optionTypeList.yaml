@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   labels:
     type: array
     items: 
@@ -19,8 +18,7 @@ properties:
   sourceMethod: 
     type: string
   apiType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   ignoreSSLErrors: 
     type: boolean
   realTime: 
@@ -47,19 +45,15 @@ properties:
       type: 
         type: string
   serviceUsername: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   servicePassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   initialDataset: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   translationScript: 
     type: string
   requestScript: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   account: 
     type: object
     properties: 

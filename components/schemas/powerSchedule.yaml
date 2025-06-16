@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   visibility: 
     type: string
   enabled: 

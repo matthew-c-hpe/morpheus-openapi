@@ -30,11 +30,9 @@ properties:
     type: integer
     format: int64
   userId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   siteId: 
-    type: integer
-    nullable: true
+    type: [ integer, 'null' ]
     format: int64
   zone: 
     type: object
@@ -55,15 +53,13 @@ properties:
   state: 
     type: string
   stateMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   severity: 
     type: string
   resolved: 
     type: boolean
   resolvedMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refType: 
     type: string
   refId: 
@@ -172,8 +168,7 @@ properties:
       visibility: 
         type: string
       description: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       zoneId: 
         type: integer
         format: int64
@@ -196,8 +191,7 @@ properties:
       internalIp: 
         type: string
       volumeId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       platform: 
         type: string
       platformVersion: 
@@ -232,51 +226,39 @@ properties:
           ts: 
             type: string
           freeMemory: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           usedMemory: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           freeSwap: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           usedSwap: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           cpuIdleTime: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           cpuSystemTime: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           cpuUserTime: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           cpuTotalTime: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           cpuUsage: 
-            type: number
-            nullable: true
+            type: [ number, 'null' ]
           usedStorage: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           reservedStorage: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           maxStorage: 
-            type: integer
-            nullable: true
+            type: [ integer, 'null' ]
             format: int64
           netTxUsage: 
             type: integer
@@ -290,21 +272,16 @@ properties:
       status: 
         type: string
       statusMessage: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       errorMessage: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       statusDate: 
-        type: string
+        type: [ string, 'null' ]
         format: date-time
-        nullable: true
       statusPercent: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       statusEta: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       powerState: 
         type: string
       agentInstalled: 
@@ -327,8 +304,7 @@ properties:
         type: integer
         format: int64
       maxCpu: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       hourlyPrice: 
         type: number
       sourceImage: 
@@ -352,8 +328,7 @@ properties:
           name: 
             type: string
           description: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           vendor: 
             type: string
           category: 
@@ -405,8 +380,7 @@ properties:
               type: integer
               format: int64
             maxIOPS: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             uuid: 
               type: string
       controllers: 
@@ -444,11 +418,9 @@ properties:
               type: integer
               format: int64
             refType: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             refId: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             name: 
               type: string
             internalId: 
@@ -456,26 +428,21 @@ properties:
             externalId: 
               type: string
             uniqueId: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             publicIpAddress: 
               type: string
             publicIpv6Address: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             ipAddress: 
               type: string
             ipv6Address: 
               type: string
             ipSubnet: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             ipv6Subnet: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             description: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             dhcp: 
               type: boolean
             active: 
@@ -493,14 +460,11 @@ properties:
                 name: 
                   type: string
             subnet: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             networkGroup: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             networkPosition: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             networkPool: 
               type: object
               properties: 
@@ -510,8 +474,7 @@ properties:
                 name: 
                   type: string
             networkDomain: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             type: 
               type: object
               properties: 
@@ -537,8 +500,7 @@ properties:
       enabled: 
         type: boolean
       tagCompliant: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       containers: 
         type: array
         items: 
@@ -560,8 +522,7 @@ properties:
         type: integer
         format: int64
       description: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       maxStorage: 
         type: integer
         format: int64
@@ -569,14 +530,12 @@ properties:
         type: integer
         format: int64
       maxCpu: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       maxCores: 
         type: integer
         format: int64
       maxDisks: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       coresPerSocket: 
         type: integer
         format: int64
@@ -593,11 +552,9 @@ properties:
       addVolumes: 
         type: boolean
       memoryOptionSource: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       cpuOptionSource: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       dateCreated: 
         type: string
         format: date-time
@@ -605,8 +562,7 @@ properties:
         type: string
         format: date-time
       regionCode: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       visibility: 
         type: string
       editable: 
@@ -697,8 +653,7 @@ properties:
         type: integer
         format: int64
       maxDisks: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       coresPerSocket: 
         type: integer
         format: int64
@@ -715,11 +670,9 @@ properties:
       addVolumes: 
         type: boolean
       memoryOptionSource: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       cpuOptionSource: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       dateCreated: 
         type: string
         format: date-time
@@ -727,8 +680,7 @@ properties:
         type: string
         format: date-time
       regionCode: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       visibility: 
         type: string
       editable: 
@@ -798,121 +750,82 @@ properties:
         type: integer
         format: int64
       cpuTotalTimeCount: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuTotalTimeMin: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuTotalTimeMax: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuTotalTimeAvg: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuTotalTimeSum: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuIdleTimeCount: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuIdleTimeMin: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuIdleTimeMax: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuIdleTimeAvg: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuIdleTimeSum: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUsageCount: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUsageMin: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUsageMax: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUsageAvg: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUsageSum: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       maxMemoryCount: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       maxMemoryMin: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       maxMemoryMax: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       maxMemoryAvg: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       maxMemorySum: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUserTimeCount: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUserTimeMin: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUserTimeMax: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUserTimeAvg: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuUserTimeSum: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuSystemTimeCount: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuSystemTimeMin: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuSystemTimeMax: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       cpuSystemTimeAvg: 
         type: number
       cpuSystemTimeSum: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       usedMemoryCount: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       usedMemoryMin: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       usedMemoryMax: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       usedMemoryAvg: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       usedMemorySum: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       freeMemoryCount: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       freeMemoryMin: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       freeMemoryMax: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       freeMemoryAvg: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]
       freeMemorySum: 
-        type: number
-        nullable: true
+        type: [ number, 'null' ]

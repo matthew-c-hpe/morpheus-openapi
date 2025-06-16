@@ -20,26 +20,20 @@ properties:
       code:
         type: string
   jobSummary:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   scheduleMode:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateTime:
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   status: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   namespace: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enabled: 
     type: boolean
   dateCreated: 
@@ -49,15 +43,12 @@ properties:
     type: string
     format: date-time
   lastRun: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastResult:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   createdBy: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -65,16 +56,13 @@ properties:
       username: 
         type: string
   targetType:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   targets:
     type: array
     items:
       type: object
   customConfig:
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   customOptions:
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     

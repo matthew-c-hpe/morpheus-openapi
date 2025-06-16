@@ -63,10 +63,9 @@ post:
                   type: string
                   description: A code for the backup job
                 scheduleId: 
-                  type: integer
+                  type: [ integer, 'null' ]
                   format: int64
                   description: Execute Schedule ID to use for the backup job
-                  nullable: true
                 retentionCount:
                   type: integer
                   format: int64

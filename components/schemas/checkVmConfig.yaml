@@ -5,8 +5,7 @@ properties:
   containerName: 
     type: string
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   checkUser: 
     type: string
   textCheckOn: 

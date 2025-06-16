@@ -71,12 +71,10 @@ post:
                   type: string
                   description: Authority (Name)
                 description:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                   description: Description
                 landingUrl:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                   description: An optional override for the default landing page after login for a user.
                 roleType:
                   type: string
@@ -107,12 +105,11 @@ post:
                     their copy of multienant roles. *Only available to master
                     tenant*
                 defaultPersona:
-                  type: string
+                  type: [ string, 'null' ]
                   enum:
                     - standard
                     - serviceCatalog
                     - vdi
-                  nullable: true
                 permissions: 
                   type: array
                   description: Set the access level for the specified permissions.

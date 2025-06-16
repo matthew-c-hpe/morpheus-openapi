@@ -48,8 +48,7 @@ properties:
   configCmdbId: 
     type: string
   securityServer: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   accountType: 
     type: string
   serviceRegistryId: 
@@ -67,11 +66,9 @@ properties:
   cspClientId: 
     type: string
   cspClientSecret: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   cspCustomer: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configCmdbDiscovery: 
     type: boolean
   azureCostingMode: 
@@ -79,5 +76,4 @@ properties:
   clientSecretHash: 
     type: string
   cspClientSecretHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

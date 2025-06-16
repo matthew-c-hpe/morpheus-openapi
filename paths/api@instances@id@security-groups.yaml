@@ -21,8 +21,7 @@ get:
                     description: Array of security group objects
                     type: array
                     items:
-                      type: object
-                      nullable: true
+                      type: [ object, 'null' ]
                       properties: 
                         id:
                           type: integer
@@ -78,8 +77,7 @@ post:
                 properties:
                   securityGroups:
                     description: Array of security group objects
-                    type: array
-                    nullable: true
+                    type: [ array, 'null' ]
                     items:
                       type: object
                       properties: 

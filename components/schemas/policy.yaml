@@ -7,8 +7,7 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   policyType: 
     type: object
     properties: 
@@ -20,8 +19,7 @@ properties:
       name: 
         type: string
   zone: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -29,8 +27,7 @@ properties:
       name: 
         type: string
   site: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -38,8 +35,7 @@ properties:
       name: 
         type: string
   user: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -47,8 +43,7 @@ properties:
       username: 
         type: string
   role: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -56,14 +51,11 @@ properties:
       authority: 
         type: string
   refType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   eachUser: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   config:
     oneOf:
     - type: object
@@ -177,11 +169,9 @@ properties:
         lifecycleMessage:
           type: string
         lifecycleAutoRenew:
-          $ref: checkbox.yaml
-          nullable: true
+          $ref: checkboxNullable.yaml
         lifecycleAllowExtend:
-          $ref: checkbox.yaml
-          nullable: true
+          $ref: checkboxNullable.yaml
         lifecycleExtensionsBeforeApproval:
           type: string
         accountIntegrationId:
@@ -309,8 +299,7 @@ properties:
         - Message of the Day
       properties:
         motd.title:
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         motd:
           type: object
           properties:
@@ -321,8 +310,7 @@ properties:
             type:
               type: string
             _fullPage:
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
               enum:
               - on
               - off
@@ -332,8 +320,7 @@ properties:
         motd.type:
           type: string
         motd._fullPage:
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
           enum:
           - on
           - off
@@ -390,11 +377,9 @@ properties:
         shutdownMessage:
           type: string
         shutdownAutoRenew:
-          $ref: checkbox.yaml
-          nullable: true
+          $ref: checkboxNullable.yaml
         shutdownAllowExtend:
-          $ref: checkbox.yaml
-          nullable: true
+          $ref: checkboxNullable.yaml
         shutdownExtensionsBeforeApproval:
           type: string
         accountIntegrationId:
@@ -467,8 +452,7 @@ properties:
       name: 
         type: string
   accounts: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
       properties:

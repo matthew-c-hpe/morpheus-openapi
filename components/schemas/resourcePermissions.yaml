@@ -3,8 +3,7 @@ properties:
   all: 
     type: boolean
   sites: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
       properties: 
@@ -18,8 +17,7 @@ properties:
   allPlans: 
     type: boolean
   plans: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
       properties: 

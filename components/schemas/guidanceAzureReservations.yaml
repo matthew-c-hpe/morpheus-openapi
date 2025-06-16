@@ -22,16 +22,14 @@ properties:
   actionValueType: 
     type: string
   actionPlanId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   statusMessage: 
     type: string
   accountId: 
     type: integer
     format: int64
   userId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   siteId: 
     type: integer
     format: int64
@@ -54,15 +52,13 @@ properties:
   state: 
     type: string
   stateMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   severity: 
     type: string
   resolved: 
     type: boolean
   resolvedMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refType: 
     type: string
   refId: 

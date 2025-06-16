@@ -14,8 +14,7 @@ properties:
         allowStaticOverride: 
           type: boolean
         pool: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
   networkGroups: 
     type: array
     items: 
@@ -64,15 +63,11 @@ properties:
         allowStaticOverride: 
           type: boolean
   hasNetworks: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   maxNetworks: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   enableNetworkTypeSelection: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   supportsNetworkSelection: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]

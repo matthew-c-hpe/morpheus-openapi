@@ -13,17 +13,14 @@ properties:
         items:
           type: object
       internalId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       interfaceId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       displayOrder: 
         type: integer
         format: int64
       networkPool: 
-        type: object
-        nullable: true
+        type: [ object, 'null' ]
       dhcp: 
         type: boolean
       uuid: 
@@ -33,53 +30,41 @@ properties:
       uniqueId: 
         type: string
       subnet: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       replaceHostRecord: 
         type: boolean
       ipMode: 
         type: string
       version: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       ipSubnet: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       config: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       publicIpAddress: 
         type: string
       fabricId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       ipv6Subnet: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       macAddress: 
         type: string
       publicIpv6Address: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       refType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       networkGroup: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       refId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       networkDomain: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       name: 
         type: string
       primaryInterface: 
         type: boolean
       networkPoolIPv6: 
-        type: object
-        nullable: true
+        type: [ object, 'null' ]
       network: 
         type: object
         properties: 
@@ -87,8 +72,7 @@ properties:
             type: integer
             format: int64
       vlanId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       type: 
         type: object
         properties: 
@@ -96,15 +80,13 @@ properties:
             type: integer
             format: int64
       networkPosition: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       poolAssigned: 
         type: boolean
       description: 
         type: string
       externalType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       externalId: 
         type: string
   interfaceType: 
@@ -130,8 +112,7 @@ properties:
       visibility: 
         type: string
       description: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       zoneId: 
         type: integer
         format: int64
@@ -148,8 +129,7 @@ properties:
       internalIp: 
         type: string
       volumeId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       platform: 
         type: string
       platformVersion: 
@@ -189,11 +169,9 @@ properties:
             type: integer
             format: int64
           version: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           maxCpu: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           usedCores: 
             type: integer
             format: int64
@@ -274,17 +252,14 @@ properties:
                     type: integer
                     format: int64
             internalId: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             interfaceId: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             displayOrder: 
               type: integer
               format: int64
             networkPool: 
-              type: object
-              nullable: true
+              type: [ object, 'null' ]
             dhcp: 
               type: boolean
             uuid: 
@@ -294,53 +269,41 @@ properties:
             uniqueId: 
               type: string
             subnet: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             replaceHostRecord: 
               type: boolean
             ipMode: 
               type: string
             version: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             ipSubnet: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             config: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             publicIpAddress: 
               type: string
             fabricId: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             ipv6Subnet: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             macAddress: 
               type: string
             publicIpv6Address: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             refType: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             networkGroup: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             refId: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             networkDomain: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             name: 
               type: string
             primaryInterface: 
               type: boolean
             networkPoolIPv6: 
-              type: object
-              nullable: true
+              type: [ object, 'null' ]
             network: 
               type: object
               properties: 
@@ -348,8 +311,7 @@ properties:
                   type: integer
                   format: int64
             vlanId: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             type: 
               type: object
               properties: 
@@ -357,15 +319,13 @@ properties:
                   type: integer
                   format: int64
             networkPosition: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             poolAssigned: 
               type: boolean
             description: 
               type: string
             externalType: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             externalId: 
               type: string
       zone: 
@@ -385,8 +345,7 @@ properties:
           name: 
             type: string
           description: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           location: 
             type: string
           visibility: 
@@ -403,8 +362,7 @@ properties:
               name: 
                 type: string
               description: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               type: 
                 type: object
                 properties: 
@@ -424,53 +382,43 @@ properties:
                   hasScopes: 
                     type: boolean
                   titleScopes: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   hasNetworks: 
                     type: boolean
                   titleNetworks: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   hasSwitches: 
                     type: boolean
                   titleSwitches: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   hasGateways: 
                     type: boolean
                   titleGateways: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   hasRouters: 
                     type: boolean
                   titleRouters: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   hasSecurityGroups: 
                     type: boolean
                   titleSecurityGroups: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   hasLoadBalancers: 
                     type: boolean
                   titleLoadBalancers: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   hasRouteTables: 
                     type: boolean
                   titleRouteTables: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   hasFirewall: 
                     type: boolean
                   titleFirewall: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   hasFirewallGroups: 
                     type: boolean
                   titleFirewallGroups: 
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
               status: 
                 type: string
               enabled: 
@@ -478,6 +426,5 @@ properties:
               visibility: 
                 type: string
           securityServer: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
 

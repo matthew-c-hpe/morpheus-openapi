@@ -6,8 +6,7 @@ properties:
   uuid: 
     type: string
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   name: 
     type: string
   code: 
@@ -17,8 +16,7 @@ properties:
     items: 
       type: string
   location: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   owner: 
     type: object
     properties: 
@@ -45,30 +43,23 @@ properties:
   status: 
     type: string
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   statusDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   costStatus: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   costStatusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   costStatusDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   costLastSyncDuration:
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   costLastSync:
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   zoneType: 
     type: object
     properties: 
@@ -83,45 +74,35 @@ properties:
     type: integer
     format: int64
   guidanceMode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   storageMode: 
     type: string
   agentMode: 
     type: string
   userDataLinux: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   userDataWindows: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   consoleKeymap: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   containerMode: 
     type: string
   costingMode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serviceVersion: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   securityMode: 
     type: string
   inventoryLevel: 
     type: string
   timezone: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   apiProxy: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   provisioningProxy: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   networkDomain: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -131,8 +112,7 @@ properties:
   domainName: 
     type: string
   regionCode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   autoRecoverPowerState: 
     type: boolean
   scalePriority: 
@@ -172,12 +152,10 @@ properties:
         type:
           type: string
   imagePath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Logo image URL
   darkImagePath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Dark logo image URL
   dateCreated: 
     type: string
@@ -186,17 +164,14 @@ properties:
     type: string
     format: date-time
   lastSync:
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastSyncDuration:
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   nextRunDate:
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   groups: 
     type: array
     items: 
@@ -217,8 +192,7 @@ properties:
         type: integer
         format: int64
       name: 
-        type: string
-    nullable: true
+        type: [ string, 'null' ]
   networkServer: 
     type: object
     properties: 
@@ -226,8 +200,7 @@ properties:
         type: integer
         format: int64
       name: 
-        type: string
-    nullable: true
+        type: [ string, 'null' ]
   stats: 
     type: object
     properties: 

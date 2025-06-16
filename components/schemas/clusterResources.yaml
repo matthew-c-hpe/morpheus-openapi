@@ -8,35 +8,28 @@ properties:
   code: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
     type: string
   resourceLevel: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resourceType: 
     type: string
   managed: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   status: 
     type: string
   lastUpdated: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   owner: 
-    nullable: true
-    type: object
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
         format: int64
   totalCpuUsage: 
-    nullable: true
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
   stats: 
-    nullable: true
-    type: object
+    type: [ object, 'null' ]

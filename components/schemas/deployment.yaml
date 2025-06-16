@@ -11,8 +11,7 @@ properties:
     type: integer
     format: int64
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time
@@ -33,14 +32,11 @@ properties:
         deployType: 
           type: string
         fetchUrl: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         gitUrl: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         gitRef: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         userVersion: 
           type: string
         version: 

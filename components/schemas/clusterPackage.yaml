@@ -6,12 +6,10 @@ properties:
   name: 
     type: string
   description:
-    type: string 
-    nullable: true
+    type: [ string , 'null' ]
   account:
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   code:
     type: string
   repeatInstall:
@@ -25,14 +23,11 @@ properties:
   enabled:
     type: boolean
   iconPath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   imagePath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   darkImagePath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   specTemplates: 
     type: array
     items: 

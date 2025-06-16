@@ -6,31 +6,22 @@ properties:
   name: 
     type: string
   type: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   code: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalIp: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   internalIp: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalPort: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   internalPort: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastUpdated: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true

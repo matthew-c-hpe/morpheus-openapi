@@ -6,20 +6,16 @@ properties:
   uniqueId: 
     type: string
   containerId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serverId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   instanceId: 
     type: integer
     format: int64
   resourceId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   appId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   stdOut: 
     type: string
   stdErr: 
@@ -36,13 +32,10 @@ properties:
     type: integer
     format: int64
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   errorMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   config: 
     type: object
   rawData: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

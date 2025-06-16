@@ -8,8 +8,7 @@ items:
     name: 
       type: string
     description: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     labels: 
       type: array
       items: 
@@ -25,43 +24,31 @@ items:
     fieldContext: 
       type: string
     fieldGroup: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     fieldClass: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     fieldAddOn: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     fieldComponent: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     fieldInput: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     placeHolder: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     verifyPattern: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     helpBlock: 
       type: string
     helpBlockFieldCode: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     defaultValue: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     optionSource: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     optionSourceType: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     optionList: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     type: 
       type: string
     advanced: 
@@ -69,8 +56,7 @@ items:
     required: 
       type: boolean
     exportMeta:
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     editable: 
       type: boolean
     creatable: 
@@ -81,34 +67,24 @@ items:
       type: integer
       format: int64
     wrapperClass: 
-      type: string
-      nullable: true
+      type: [ string, 'null' ]
     enabled: 
       type: boolean
     noBlank: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     dependsOnCode: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     visibleOnCode: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     requireOnCode: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     contextualDefault: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     displayValueOnDetails: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     showOnCreate: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     showOnEdit: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     localCredential: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]

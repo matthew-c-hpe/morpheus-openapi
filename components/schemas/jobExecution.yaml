@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   process: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   job: 
     type: object
     properties: 
@@ -17,8 +16,7 @@ properties:
       name: 
         type: string
       description: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       type: 
         type: object
         properties: 
@@ -30,8 +28,7 @@ properties:
           name: 
             type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time
@@ -45,13 +42,10 @@ properties:
     type: integer
     format: int64
   resultData: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
     type: string
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   createdBy: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

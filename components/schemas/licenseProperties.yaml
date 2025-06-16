@@ -42,59 +42,48 @@ limitType:
     - standard
     - workload
 maxManagedServers:
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: Managed Servers Limit. 0 is enforced and null is used for unlimited.
 maxDiscoveredServers: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: Discovered Servers Limit. 0 is enforced and null is used for unlimited.
 maxHosts: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: Host Limit. 0 is enforced and null is used for unlimited.
 maxMvm: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: HPE VM Host Limit. 0 is enforced and null is used for unlimited.
 maxMvmSockets: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: HPE VM Host Limit. 0 is enforced and null is used for unlimited.
 maxSockets: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: Global Socket Limit. 0 is enforced and null is used for unlimited.
 maxIac: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: IAC Deployments Limit. 0 is enforced and null is used for unlimited.
 maxXaas: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: Xaas Instances Limit. 0 is enforced and null is used for unlimited.
 maxExecutions: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: Execution Limit. 0 is enforced and null is used for unlimited.
 maxDistributedWorkers: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: Distributed Workers Limit. 0 is enforced and null is used for unlimited.
 maxDiscoveredObjects: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
   description: Discovered Objects Limit. Not yet enforced.
 hardLimit: 
   type: boolean
@@ -118,17 +107,14 @@ accountName:
   type: string
   description: Account Name
 config: 
-  type: object
-  nullable: true
+  type: [ object, 'null' ]
   description: License Configuration Object
 amazonProductCodes: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 features: 
   $ref: licenseFeatures.yaml
 zoneTypes: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 lastUpdated: 
   type: string
   format: date-time
@@ -136,6 +122,5 @@ dateCreated:
   type: string
   format: date-time
 recalculationDate:
-  type: string
+  type: [ string, 'null' ]
   format: date-time
-  nullable: true

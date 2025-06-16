@@ -120,9 +120,8 @@ post:
                   type: boolean
                   default: true
                 forecastType: 
-                  type: object
+                  type: [ object, 'null' ]
                   description: Forecast Model
-                  nullable: true
                   required:
                     - id
                   properties: 

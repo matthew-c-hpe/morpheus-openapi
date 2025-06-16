@@ -19,26 +19,21 @@ properties:
     description: Can be used to enable / disable the network server.
     default: true
   serviceUrl: 
-    type: string
+    type: [ string, 'null' ]
     description: URL
-    nullable: true
     example: "https://nsxt-server"
   serviceUsername: 
-    type: string
+    type: [ string, 'null' ]
     description: Username
-    nullable: true
   servicePassword: 
-    type: string
+    type: [ string, 'null' ]
     description: Password
-    nullable: true
   config:
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties:
       project:
-        type: string
+        type: [ string, 'null' ]
         description: NSX Project (NSX 4.1+)
-        nullable: true
   visibility: 
     type: string
     description: Visibility - Set to public to allow all tenants

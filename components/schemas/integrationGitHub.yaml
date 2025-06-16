@@ -50,13 +50,10 @@ properties:
     type: string
     format: date-time
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastSync: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastSyncDuration: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   credential: 
     $ref: creds.yaml

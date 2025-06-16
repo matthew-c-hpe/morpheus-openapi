@@ -18,60 +18,46 @@ properties:
   displayName: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   subType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   subId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   zoneId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   integrationId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   appId:
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   instanceId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   containerId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   serverId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   containerName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
     type: string
   reason: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   percent: 
     type: number
   statusEta: 
     type: integer
     format: int64
   message: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   output: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   error: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   startDate: 
     type: string
     format: date-time
@@ -125,50 +111,40 @@ properties:
             name: 
               type: string
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         refType: 
           type: string
         refId: 
           type: integer
           format: int64
         subType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         subId: 
-          type: integer
+          type: [ integer, 'null' ]
           format: int64
-          nullable: true
         zoneId: 
-          type: integer
+          type: [ integer, 'null' ]
           format: int64
-          nullable: true
         integrationId: 
-          type: integer
+          type: [ integer, 'null' ]
           format: int64
-          nullable: true
         instanceId: 
-          type: integer
+          type: [ integer, 'null' ]
           format: int64
-          nullable: true
         containerId: 
-          type: integer
+          type: [ integer, 'null' ]
           format: int64
-          nullable: true
         serverId: 
-          type: integer
+          type: [ integer, 'null' ]
           format: int64
-          nullable: true
         containerName: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         displayName: 
           type: string
         status: 
           type: string
         reason: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         percent: 
           type: integer
           format: int64
@@ -176,14 +152,11 @@ properties:
           type: integer
           format: int64
         message: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         output: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         error: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         startDate: 
           type: string
           format: date-time

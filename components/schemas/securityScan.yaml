@@ -47,8 +47,7 @@ properties:
   scanScore: 
     type: number
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   createdBy: 
     type: string
   updatedBy: 

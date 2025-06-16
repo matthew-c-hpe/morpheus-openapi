@@ -83,8 +83,7 @@ properties:
       success: 
         type: boolean
       threadList: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
       busyThreads: 
@@ -104,14 +103,12 @@ properties:
               type: integer
               format: int64
             lockName: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             lockOwnerId: 
               type: integer
               format: int64
             lockOwnerName: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             state: 
               type: string
             waitedCount: 
@@ -125,30 +122,25 @@ properties:
             isSuspended: 
               type: boolean
             lockedMonitors: 
-              type: array
-              nullable: true
+              type: [ array, 'null' ]
               items: 
                 type: object
             lockedSynchronizers: 
-              type: array
-              nullable: true
+              type: [ array, 'null' ]
               items: 
                 type: object
             lockInfo: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             currentLines: 
               type: string
             cpuPercent: 
               type: number
       blockedThreads: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
       runningThreads: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
       totalCpuTime: 
@@ -168,15 +160,13 @@ properties:
       success: 
         type: boolean
       connectionList: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
       busyConnections: 
         type: array
         items: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
       maxConnections: 
         type: integer
         format: int64
@@ -190,8 +180,7 @@ properties:
         type: integer
         format: int64
       innodbStatus: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       stats: 
         type: object
         properties: 
@@ -1323,13 +1312,11 @@ properties:
           activePercent: 
             type: string
       indices: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
       badIndices: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
   rabbit: 
@@ -1338,13 +1325,11 @@ properties:
       success: 
         type: boolean
       busyQueues: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
       errorQueues: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
       status: 

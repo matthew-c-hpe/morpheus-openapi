@@ -6,9 +6,8 @@ properties:
     type: string
     description: Network transport zone name
   description: 
-    type: string
+    type: [ string, 'null' ]
     description: Network transport zone description
-    nullable: true
   visibility: 
     type: string
     description: private or public

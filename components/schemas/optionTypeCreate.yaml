@@ -6,13 +6,11 @@ properties:
     type: string
     description: The name of the option type for handy reference
   description: 
-    type: string
+    type: [ string, 'null' ]
     description: Short description of the option type
-    nullable: true
   labels: 
-    type: array
+    type: [ array, 'null' ]
     description: Array of label strings, can be used for filtering.
-    nullable: true
     items:
       type: string
   fieldName:

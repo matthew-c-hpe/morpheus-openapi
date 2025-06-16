@@ -17,8 +17,7 @@ get:
             - type: object
               properties:
                 instances:
-                  type: array
-                  nullable: true
+                  type: [ array, 'null' ]
                   items:
                     type: object
                     properties:
@@ -32,8 +31,7 @@ get:
             - type: object
               properties:
                 servers:
-                  type: array
-                  nullable: true
+                  type: [ array, 'null' ]
                   items:
                     type: object
                     properties:

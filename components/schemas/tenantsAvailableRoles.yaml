@@ -11,11 +11,8 @@ properties:
         authority: 
           type: string
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         roleType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         owner: 
-          type: object
-          nullable: true
+          type: [ object, 'null' ]

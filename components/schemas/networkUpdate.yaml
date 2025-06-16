@@ -4,14 +4,12 @@ properties:
     type: string
     description: Display Name
   labels: 
-    type: array
+    type: [ array, 'null' ]
     description: Array of label strings, can be used for filtering.
-    nullable: true
     items:
       type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Description
   cidr: 
     type: string
@@ -29,10 +27,9 @@ properties:
     type: integer
     format: int64
   pool: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
     description: Network Pool ID
-    nullable: true
   allowStaticOverride: 
     type: boolean
     description: Allow IP Override
@@ -70,9 +67,8 @@ properties:
     type: boolean
     description: Bypass Proxy for Appliance URL
   noProxy: 
-    type: string
+    type: [ string, 'null' ]
     description: Comma-separated list of ip addresses or name servers to exclude proxy traversal for. Typically locally routable servers are excluded.
-    nullable: true
   visibility: 
     type: string
     description: Visibility, private or public.

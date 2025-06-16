@@ -47,8 +47,7 @@ put:
                   type: string
                   description: Name
                 description:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                   description: Description
                 role:
                   type: object
@@ -60,8 +59,7 @@ put:
                       type: integer
                       format: int64
                 subdomain:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                   description: >-
                     The subdomain. This will be part of the login URL and
                     username for sub tenant users.

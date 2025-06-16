@@ -14,18 +14,15 @@ properties:
   name: 
     type: string
   labels:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: string
   code: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   provisionTypeCode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
     type: string
   active: 
@@ -41,22 +38,17 @@ properties:
   hasAutoScale: 
     type: boolean
   proxyType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   proxyPort: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   proxyProtocol: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   environmentPrefix: 
     type: string
   backupType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   config: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   visibility: 
     type: string
   featured: 
@@ -74,20 +66,16 @@ properties:
     items: 
       $ref: optionType.yaml
   environmentVariables: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   priceSets: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   imagePath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Logo image URL
   darkImagePath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Dark logo image URL

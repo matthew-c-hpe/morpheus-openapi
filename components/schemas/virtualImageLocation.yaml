@@ -16,42 +16,34 @@ properties:
   code: 
     type: string
   internalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
     type: string
   externalDiskId: 
     type: string
   remotePath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   imagePath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   imageName: 
     type: string
   imageRegion: 
     type: string
   imageFolder: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refType: 
     type: string
   refId: 
     type: integer
     format: int64
   nodeRefType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   nodeRefId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   subRefType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   subRefId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   isPublic: 
     type: boolean
   systemImage: 
@@ -60,8 +52,7 @@ properties:
     type: integer
     format: int64
   pricePlan: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   volumes: 
     type: array
     items:

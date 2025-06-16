@@ -21,8 +21,7 @@ properties:
   status: 
     type: string
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refType: 
     type: string
   instance: 

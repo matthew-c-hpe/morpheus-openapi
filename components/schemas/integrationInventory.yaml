@@ -6,11 +6,9 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   owner: 
     type: object
     properties: 

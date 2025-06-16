@@ -18,13 +18,11 @@ properties:
         format: int64
         description: Instance ID
       name: 
-        type: string
+        type: [ string, 'null' ]
         description: Instance Name
-    nullable: true
   containerId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   job: 
     type: object
     properties: 
@@ -46,13 +44,11 @@ properties:
         type: string
         description: Schedule Name
       cron: 
-        type: string
+        type: [ string, 'null' ]
         description: Schedule Cron Expression
-    nullable: true
   retentionCount: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   backupType: 
     type: object
     properties: 
@@ -74,9 +70,8 @@ properties:
         format: int64
         description: Storage Provider ID
       name: 
-        type: string
+        type: [ string, 'null' ]
         description: Storage Provider Name
-    nullable: true
   backupProvider: 
     type: object
     properties: 
@@ -85,9 +80,8 @@ properties:
         format: int64
         description: Backup Provider ID
       name: 
-        type: string
+        type: [ string, 'null' ]
         description: Backup Provider Name
-    nullable: true
   backupRespository: 
     type: object
     properties: 
@@ -96,24 +90,20 @@ properties:
         format: int64
         description: Backup Respository ID
       name: 
-        type: string
+        type: [ string, 'null' ]
         description: Backup Respository Name
-    nullable: true
   cronExpression: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Cron Expression
   nextFire: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
     description: Next Fire
   lastStatus: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Last Status
   lastResult: 
-    type: object
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -126,7 +116,6 @@ properties:
         type: string
         format: date-time
         description: Last Result Date Created
-    nullable: true
   stats:
     type: object
     description: Backup Result Statistics

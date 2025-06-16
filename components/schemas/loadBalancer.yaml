@@ -40,28 +40,21 @@ properties:
     type: integer
     format: int64
   username:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   ip:
     type: string
   internalIp:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalIp:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   apiPort:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   adminPort:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sslEnabled:
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   sslCert:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   config:
     type: object
   dateCreated:

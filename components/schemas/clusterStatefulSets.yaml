@@ -8,13 +8,11 @@ properties:
   code: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
     type: string
   resourceLevel: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resourceType: 
     type: string
   managed: 

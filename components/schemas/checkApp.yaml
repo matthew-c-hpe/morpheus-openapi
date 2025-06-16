@@ -12,8 +12,7 @@ properties:
   active: 
     type: boolean
   app: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id:
         type: integer
@@ -23,32 +22,25 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   inUptime: 
     type: boolean
   lastCheckStatus: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastWarningDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastErrorDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastSuccessDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastRunDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastError: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastTimer: 
     type: integer
     format: int64
@@ -56,8 +48,7 @@ properties:
     type: integer
     format: int64
   history: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   severity: 
     type: string
   createIncident: 
@@ -79,8 +70,7 @@ properties:
     type: string
     format: date-time
   availability: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   checks: 
     type: array
     items: 

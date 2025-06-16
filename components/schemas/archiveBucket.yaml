@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   storageProvider: 
     type: object
     properties: 
@@ -25,8 +24,7 @@ properties:
       name: 
         type: string
   createdBy: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       username:
         type: string
@@ -39,9 +37,8 @@ properties:
   filePath: 
     type: string
   rawSize: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   fileCount: 
     type: integer
     format: int64

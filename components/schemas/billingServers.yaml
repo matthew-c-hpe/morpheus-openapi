@@ -60,23 +60,19 @@ properties:
                     typeCode: 
                       type: string
                     datastore: 
-                      type: string
-                      nullable: true
+                      type: [ string, 'null' ]
               maxMemory: 
                 type: integer
                 format: int64
               maxCpu: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               maxCores: 
                 type: integer
                 format: int64
               serverExternalId: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               serverInternalId: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               planName: 
                 type: string
               hourlyPrice: 
@@ -108,17 +104,13 @@ properties:
                 type: integer
                 format: int64
               siteId: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               siteName: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               siteUUID: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               siteCode: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               startDate: 
                 type: string
                 format: date-time
@@ -173,11 +165,9 @@ properties:
               servicePlanName: 
                 type: string
               resourcePoolId: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               resourcePoolName: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
         numUsages: 
           type: integer
           format: int64
@@ -193,17 +183,12 @@ properties:
         serverUUID: 
           type: string
         serverUniqueId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         serverExternalId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         serverInternalId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         resourcePoolId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         resourcePoolName: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]

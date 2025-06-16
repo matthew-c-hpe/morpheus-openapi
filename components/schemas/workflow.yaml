@@ -8,11 +8,9 @@ properties:
   type: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   labels:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: string
   dateCreated: 
@@ -25,8 +23,7 @@ properties:
     type: integer
     format: int64
   platform: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   visibility: 
     type: string
   allowCustomConfig: 
@@ -37,8 +34,7 @@ properties:
       type: integer
       format: int64
   optionTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
       properties: 
@@ -48,8 +44,7 @@ properties:
         name: 
           type: string
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         code: 
           type: string
         fieldName: 
@@ -57,49 +52,35 @@ properties:
         fieldLabel: 
           type: string
         fieldCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldContext: 
           type: string
         fieldGroup: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldClass: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldAddOn: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldComponent: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldInput: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         placeHolder: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         verifyPattern: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         helpBlock: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         helpBlockFieldCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         defaultValue: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         optionSource: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         optionSourceType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         optionList: 
-          type: object
-          nullable: true
+          type: [ object, 'null' ]
           properties: 
             id:
               type: integer
@@ -124,35 +105,27 @@ properties:
           type: integer
           format: int64
         wrapperClass: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         enabled: 
           type: boolean
         noBlank: 
           type: boolean
         dependsOnCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         visibleOnCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         requireOnCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         contextualDefault: 
           type: boolean
         displayValueOnDetails: 
-          type: boolean
-          nullable: true
+          type: [ boolean, 'null' ]
         showOnCreate: 
-          type: boolean
-          nullable: true
+          type: [ boolean, 'null' ]
         showOnEdit: 
-          type: boolean
-          nullable: true
+          type: [ boolean, 'null' ]
         localCredential: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
   taskSetTasks: 
     type: array
     items: 
@@ -178,11 +151,9 @@ properties:
             name: 
               type: string
             code: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             taskType: 
-              type: object
-              nullable: true
+              type: [ object, 'null' ]
               properties: 
                 id: 
                   type: integer
@@ -192,44 +163,32 @@ properties:
                 name: 
                   type: string
             labels:
-              type: array
-              nullable: true
+              type: [ array, 'null' ]
               items: 
                 type: string
             taskOptions: 
-              type: object
-              nullable: true
+              type: [ object, 'null' ]
               properties: 
                 localScriptGitRef: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 username: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 localScriptGitId: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 host: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 sshKey: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 port: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 password: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 passwordHash: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 shell.sudo: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
             file: 
-              type: object
-              nullable: true
+              type: [ object, 'null' ]
               properties: 
                 id: 
                   type: integer
@@ -237,14 +196,11 @@ properties:
                 sourceType: 
                   type: string
                 contentRef: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 contentPath: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 repository: 
-                  type: object
-                  nullable: true
+                  type: [ object, 'null' ]
                   properties: 
                     id:
                       type: integer
@@ -252,11 +208,9 @@ properties:
                     name:
                       type: string
                 content: 
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
             resultType: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             executeTarget: 
               type: string
             retryable: 

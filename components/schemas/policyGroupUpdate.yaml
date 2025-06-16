@@ -242,15 +242,13 @@ properties:
                   type:
                     type: string
                   _fullPage:
-                    type: boolean
-                    nullable: true
+                    type: [ boolean, 'null' ]
               motd.message:
                 type: string
               motd.type:
                 type: string
               motd._fullPage:
-                type: boolean
-                nullable: true
+                type: [ boolean, 'null' ]
               motd.date:
                 type: string
                 format: date-time

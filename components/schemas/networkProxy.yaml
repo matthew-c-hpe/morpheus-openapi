@@ -9,16 +9,13 @@ proxyPort:
   type: integer
   format: int64
 proxyUser: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 proxyPassword: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 proxyDomain: 
   type: string
 proxyWorkstation: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 visibility: 
   type: string
 account: 

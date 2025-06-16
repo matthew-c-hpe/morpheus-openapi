@@ -19,14 +19,11 @@ properties:
   maxMemory: 
     type: number
   maxCpu: 
-    type: number
-    nullable: true
+    type: [ number, 'null' ]
   maxCores: 
-    type: number
-    nullable: true
+    type: [ number, 'null' ]
   maxDisks: 
-    type: number
-    nullable: true
+    type: [ number, 'null' ]
   coresPerSocket: 
     type: number
   customCpu: 
@@ -34,23 +31,17 @@ properties:
   customCores: 
     type: boolean
   customMaxStorage: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   customMaxDataStorage: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   customMaxMemory: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   addVolumes: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   memoryOptionSource: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   cpuOptionSource: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time
@@ -58,8 +49,7 @@ properties:
     type: string
     format: date-time
   regionCode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   visibility: 
     type: string
   editable: 
@@ -85,8 +75,7 @@ properties:
   tenants: 
     type: string
   priceSets: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
       properties: 
@@ -100,55 +89,39 @@ properties:
         priceUnit: 
           type: string
   config: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       storageSizeType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       memorySizeType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       ranges: 
-        type: object
-        nullable: true
+        type: [ object, 'null' ]
         properties: 
           minStorage: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           maxStorage: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           minPerDiskSize:
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           maxPerDiskSize:
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           minMemory: 
-            type: number
-            nullable: true
+            type: [ number, 'null' ]
           maxMemory: 
-            type: number
-            nullable: true
+            type: [ number, 'null' ]
           minCores: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           maxCores: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           minSockets: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           maxSockets:
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           minCoresPerSocket:
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           maxCoresPerSocket:
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
   zones: 
     type: array
     items: 
@@ -196,8 +169,7 @@ properties:
                 default: 
                   type: boolean
           plans: 
-            type: array
-            nullable: true
+            type: [ array, 'null' ]
             items: 
               type: object
       tenantPermissions: 

@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   labels:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: string
   type: 
@@ -27,29 +26,22 @@ properties:
         type: integer
         format: int64
   jobSummary: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   scheduleMode: 
     oneOf: 
-      - type: string
-        nullable: true
+      - type: [ string, 'null' ]
       - type: integer
         format: int64
   dateTime: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   namespace: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enabled: 
     type: boolean
   dateCreated: 
@@ -64,8 +56,7 @@ properties:
   lastResult: 
     type: string
   createdBy: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -77,8 +68,7 @@ properties:
   targetType: 
     type: string
   targets: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
       properties: 
@@ -93,11 +83,9 @@ properties:
           type: integer
           format: int64
   customConfig: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   customOptions: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       checkTime: 
         type: integer

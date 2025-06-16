@@ -6,18 +6,15 @@ properties:
   code: 
     type: string
   account: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   name: 
     type: string
   labels: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: string
   category: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sortOrder: 
     type: integer
     format: int64
@@ -30,17 +27,13 @@ properties:
   script: 
     type: string
   scriptService: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   scriptMethod: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   runAsUser: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   runAsPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sudoUser: 
     type: boolean
   failOnError: 

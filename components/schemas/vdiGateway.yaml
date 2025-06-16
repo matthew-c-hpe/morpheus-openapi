@@ -6,14 +6,11 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   gatewayUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   apiKey: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time

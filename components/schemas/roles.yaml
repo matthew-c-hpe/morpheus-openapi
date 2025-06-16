@@ -10,11 +10,9 @@ properties:
     type: string
     description: Alias for name
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   landingUrl:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: An optional override for the default landing page after login for a user.
   scope: 
     type: string
@@ -25,8 +23,7 @@ properties:
   multitenantLocked: 
     type: boolean
   parentRoleId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   diverged: 
     type: boolean
   ownerId: 
@@ -41,8 +38,7 @@ properties:
       name: 
         type: string
   defaultPersona: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time

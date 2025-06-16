@@ -14,11 +14,8 @@ properties:
       - git
       - fetch
   gitUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   gitRef: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   fetchUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

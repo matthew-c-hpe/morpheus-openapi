@@ -21,10 +21,9 @@ properties:
     items:
       type: string
   location:
-    type: string
+    type: [ string, 'null' ]
     description: Optional location for your cloud
     example: US East
-    nullable: true
   visibility:
     type: string
     description: private or public

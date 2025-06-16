@@ -4,13 +4,11 @@ properties:
     type: string
     description: Appliance URL
   internalApplianceUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Internal Appliance URL (PXE)
   corsAllowed: 
-    type: string
+    type: [ string, 'null' ]
     description: API Allowed Origins
-    nullable: true
   registrationEnabled: 
     type: boolean
     description: Registration enabled (true, false)
@@ -82,12 +80,10 @@ properties:
     type: string
     description: SMTP password
   proxyHost: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Proxy host
   proxyPort: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Proxy port
   proxyUser: 
     type: string
@@ -96,19 +92,16 @@ properties:
     type: string
     description: Proxy password
   proxyDomain: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Proxy domain
   proxyWorkstation: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Proxy workstation
   currencyProvider: 
     type: string
     description: Currency provider
   currencyKey: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Currency provider API key
   enableAllZoneTypes: 
     type: boolean

@@ -3,5 +3,4 @@ properties:
   success: 
     type: boolean
   errors: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]

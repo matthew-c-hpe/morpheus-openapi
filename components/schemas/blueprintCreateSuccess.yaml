@@ -8,19 +8,17 @@ properties:
     type: string
     description: A name for the blueprint
   description:
-    type: string
+    type: [ string, 'null' ]
     description: A description for the blueprint
     example: Basic Template Description
-    nullable: true
   labels:
     type: array
     items: 
       type: string
   category:
-    type: string
+    type: [ string, 'null' ]
     description: Category
     example: web, utility, app
-    nullable: true
   config:
     oneOf:
       -  $ref: blueprintARMCreateSuccess.yaml

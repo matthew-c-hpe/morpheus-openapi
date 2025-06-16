@@ -25,19 +25,17 @@ properties:
     description: SSH Username
     example: myuser
   sshPassword:
-    type: string
+    type: [ string, 'null' ]
     description: SSH Password
     example: mypassword
-    nullable: true
   sshKeyPair:
-    type: object
+    type: [ object, 'null' ]
     description: SSH Key.  See `/api/options/privateKeyPairs` for available private key pairs.
     properties:
       id:
         type: integer
         format: int64
         description: Key Pair ID
-    nullable: true
   powerScheduleType:
     description: Power schedule ID.
     type: integer
@@ -85,8 +83,7 @@ properties:
         name:
           type: string
         value:
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
     example:
       - name: hello
   guestConsoleType:

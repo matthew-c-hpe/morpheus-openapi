@@ -63,13 +63,11 @@ properties:
             type: integer
             format: int64
       sites:
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
       plans:
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
   datastores: 

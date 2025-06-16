@@ -18,14 +18,11 @@ properties:
   systemCreated: 
     type: boolean
   zone: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   zonePool: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   account: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   prices: 
     type: array
     items: 
@@ -45,40 +42,30 @@ properties:
         priceUnit: 
           type: string
         additionalPriceUnit: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         price: 
-          type: number
-          nullable: true
+          type: [ number, 'null' ]
         customPrice: 
-          type: number
-          nullable: true
+          type: [ number, 'null' ]
         markupType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         markup: 
           type: integer
           format: int64
         markupPercent: 
-          type: number
-          nullable: true
+          type: [ number, 'null' ]
         cost: 
-          type: number
-          nullable: true
+          type: [ number, 'null' ]
         currency: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         incurCharges: 
           type: string
         platform: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         software: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         volumeType: 
-          type: object
-          nullable: true
+          type: [ object, 'null' ]
           properties: 
             id: 
               type: integer
@@ -88,11 +75,8 @@ properties:
             name: 
               type: string
         datastore: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         crossCloudApply: 
-          type: boolean
-          nullable: true
+          type: [ boolean, 'null' ]
         account: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]

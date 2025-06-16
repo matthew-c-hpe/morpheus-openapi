@@ -15,74 +15,53 @@ properties:
   defaultRoleId: 
     type: string
   defaultUserRoleId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dockerPrivilegedMode: 
     type: boolean
   expirePwdDays: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   disableAfterAttempts: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   disableAfterDaysInactive: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   warnUserDaysBefore: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   smtpMailFrom: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   smtpServer: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   smtpPort: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   smtpSSL: 
     type: boolean
   smtpTLS: 
     type: boolean
   smtpUser: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   smtpPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   smtpPasswordHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   proxyHost: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   proxyPort: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   proxyUser: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   proxyPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   proxyPasswordHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   proxyDomain: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   proxyWorkstation: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   currencyProvider: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   currencyKey: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enabledZoneTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
       properties: 

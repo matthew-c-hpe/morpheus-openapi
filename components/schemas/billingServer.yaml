@@ -5,8 +5,7 @@ properties:
   refUUID: 
     type: string
   refId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   startDate: 
     type: string
     format: date-time
@@ -38,17 +37,13 @@ properties:
           type: integer
           format: int64
         siteId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         siteName: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         siteUUID: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         siteCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         currency: 
           type: string
         startDate: 
@@ -101,8 +96,7 @@ properties:
                       type: integer
                       format: int64
                     datastoreId: 
-                      type: string
-                      nullable: true
+                      type: [ string, 'null' ]
                     volumeType: 
                       type: string
                     datastore: 
@@ -132,13 +126,11 @@ properties:
   serverUUID: 
     type: string
   serverUniqueId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serverExternalId: 
     type: string
   serverInternalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resourcePoolId: 
     type: integer
     format: int64

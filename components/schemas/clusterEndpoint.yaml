@@ -8,7 +8,6 @@ properties:
   code: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
     type: string

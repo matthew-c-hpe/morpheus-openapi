@@ -20,52 +20,39 @@ properties:
     type: string
     format: date-time
   itemId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   itemType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   itemName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   itemDescription: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   productId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   productCode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   productName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   itemSeller: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   itemAction: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
     type: string
   rateId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   rateClass: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   rateUnit: 
     type: string
   rateTerm: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   usageType: 
     type: string
   usageCategory: 
     type: string
   usageService: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   itemUsage: 
     type: integer
     format: int64
@@ -81,14 +68,11 @@ properties:
     type: integer
     format: int64
   itemTerm: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   taxType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   regionCode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   currency: 
     type: string
   conversionRate: 

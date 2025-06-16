@@ -8,9 +8,8 @@ properties:
     type: string
     description: Name
   description: 
-    type: string
+    type: [ string, 'null' ]
     description: Description
-    nullable: true
   type: 
     type: object
     description: Network Server Type
@@ -35,7 +34,7 @@ properties:
         type: string
         description: Integration Type Code
       integrationType:
-        type: object
+        type: [ object, 'null' ]
         description: Integration Type
         properties: 
           id: 
@@ -44,9 +43,7 @@ properties:
           code: 
             type: string
           name: 
-            type: string
-        nullable: true
-    nullable: true
+            type: [ string, 'null' ]
   account: 
     type: object
     description: Owner Tenant
@@ -55,109 +52,86 @@ properties:
         type: integer
         format: int64
       name: 
-        type: string
-    nullable: true
+        type: [ string, 'null' ]
   visibility:
     type: string
   internalId: 
-    type: string
+    type: [ string, 'null' ]
     description: Internal ID
-    nullable: true
   externalId: 
-    type: string
+    type: [ string, 'null' ]
     description: External ID
-    nullable: true
   serviceUrl: 
-    type: string
+    type: [ string, 'null' ]
     description: Service URL
-    nullable: true
     example: "https://example-infoblox-fqdn/wapi/v2.9"
   serviceHost: 
-    type: string
+    type: [ string, 'null' ]
     description: Service Host
-    nullable: true
   servicePort: 
-    type: integer
+    type: [ integer, 'null' ]
     description: Service Port
-    nullable: true
     example: 22
   serviceMode: 
-    type: string
+    type: [ string, 'null' ]
     description: Service Mode
-    nullable: true
   servicePath: 
-    type: string
+    type: [ string, 'null' ]
     description: Service Path
-    nullable: true
   serviceUsername: 
-    type: string
+    type: [ string, 'null' ]
     description: Service Username
-    nullable: true
   servicePassword: 
-    type: string
+    type: [ string, 'null' ]
     description: Service Password
-    nullable: true
   servicePasswordHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serviceToken: 
-    type: string
+    type: [ string, 'null' ]
     description: Service Token
-    nullable: true
   serviceTokenHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   apiPort:
-    type: integer
+    type: [ integer, 'null' ]
     format: int32
-    nullable: true
   adminPort:
-    type: integer
+    type: [ integer, 'null' ]
     format: int32
-    nullable: true
   status: 
     type: string
     description: Status
     example: ok
   statusMessage: 
-    type: string
+    type: [ string, 'null' ]
     description: Status Message
-    nullable: true
   statusDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastSync: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
     description: Last Sync Date
-    nullable: true
   nextRunDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
     description: Next Run Date
-    nullable: true
   lastSyncDuration: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
     description: Last Sync Duration in milliseconds
-    nullable: true
   config: 
     type: object
     description: Config object varies with network server type. 
   networkFilter: 
-    type: string
+    type: [ string, 'null' ]
     description: Network Filter
-    nullable: true
   tenantMatch: 
-    type: string
+    type: [ string, 'null' ]
     description: Tenant Match
-    nullable: true
   zoneId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
     description: Cloud ID
-    nullable: true
   dateCreated: 
     type: string
     format: date-time

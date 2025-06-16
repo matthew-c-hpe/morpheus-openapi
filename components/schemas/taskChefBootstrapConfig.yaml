@@ -9,8 +9,7 @@ properties:
   name: 
     type: string
   code: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   taskType: 
     type: object
     properties: 
@@ -34,69 +33,49 @@ properties:
     additionalProperties: false
     properties: 
       chefDataKey: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       chefDataKeyHash: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       chefRunList: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       localScriptGitRef: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       chefDataKeyPath: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       localScriptGitId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       port: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       chefEnv: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       chefNodeName: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       host: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       sshKey: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       username: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       password: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       passwordHash: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       chefAttributes: 
         type: string
   file: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
-        type: integer
+        type: [ integer, 'null' ]
         format: int64
-        nullable: true
       sourceType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       contentRef: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       contentPath: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       repository: 
-        type: object
-        nullable: true
+        type: [ object, 'null' ]
         properties:
           id:
             type: integer
@@ -104,11 +83,9 @@ properties:
           name:
             type: string
       content: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
   resultType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   executeTarget: 
     type: string
   retryable: 

@@ -9,8 +9,7 @@ properties:
   name: 
     type: string
   code: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   taskType: 
     type: object
     properties: 
@@ -33,66 +32,47 @@ properties:
     type: object
     properties: 
       ansibleOptions: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       ansiblePlaybook: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       sshKey: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       port: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       localScriptGitRef: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       password: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       passwordHash: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       localScriptGitId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       ansibleGitId: 
         type: string
       host: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       ansibleSkipTags: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       ansibleTags: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       username: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       ansibleGitRef: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
   file: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
-        type: integer
+        type: [ integer, 'null' ]
         format: int64
-        nullable: true
       sourceType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       contentRef: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       contentPath: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       repository: 
-        type: object
-        nullable: true
+        type: [ object, 'null' ]
         properties:
           id:
             type: integer
@@ -100,11 +80,9 @@ properties:
           name:
             type: string
       content: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
   resultType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   executeTarget: 
     type: string
   retryable: 

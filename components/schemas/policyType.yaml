@@ -8,22 +8,17 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
     type: string
   loadMethod: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enforceMethod: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   prepareMethod: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   validateMethod: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enforceOnProvision: 
     type: boolean
   enforceOnManaged: 

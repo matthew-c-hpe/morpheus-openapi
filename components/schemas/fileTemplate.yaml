@@ -6,8 +6,7 @@ properties:
   code: 
     type: string
   account: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -17,8 +16,7 @@ properties:
   name: 
     type: string
   labels: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: string
   fileName: 
@@ -26,38 +24,29 @@ properties:
   filePath: 
     type: string
   templateType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   templatePhase: 
     type: string
   template: 
     type: string
   category: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   settingCategory: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   settingName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   autoRun: 
     type: boolean
   runOnScale: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   runOnDeploy: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   fileOwner: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   fileGroup: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   permissions: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time

@@ -8,8 +8,7 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
     type: string
   enabled: 

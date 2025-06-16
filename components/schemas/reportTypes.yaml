@@ -22,8 +22,7 @@ items:
     supportsAllZoneTypes: 
       type: boolean
     isPlugin: 
-      type: boolean
-      nullable: true
+      type: [ boolean, 'null' ]
     dateCreated: 
       type: string
       format: date-time
@@ -38,8 +37,7 @@ items:
           name: 
             type: string
           description: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           code: 
             type: string
           fieldName: 
@@ -51,44 +49,31 @@ items:
           fieldContext: 
             type: string
           fieldGroup: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           fieldClass: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           fieldAddOn: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           fieldComponent: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           fieldInput: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           placeHolder: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           verifyPattern: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           helpBlock: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           helpBlockFieldCode: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           defaultValue: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           optionSource: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           optionSourceType: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           optionList: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           type: 
             type: string
           advanced: 
@@ -102,27 +87,22 @@ items:
           creatable: 
             type: boolean
           config: 
-            type: object
-            nullable: true  
+            type: [ object, 'null' ]  
           displayOrder: 
             type: integer
             format: int64
           wrapperClass: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           enabled: 
             type: boolean
           noBlank: 
             type: boolean
           dependsOnCode: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           visibleOnCode: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           requireOnCode: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           contextualDefault: 
             type: boolean
           displayValueOnDetails: 

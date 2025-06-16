@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   code: 
     type: string
   aclEnabled: 
@@ -25,8 +24,7 @@ properties:
   exportServer: 
     type: boolean
   viewSet: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serverType: 
     type: string
   hostType: 
@@ -58,8 +56,7 @@ properties:
     type: integer
     format: int64
   maxDisk: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resizeCopiesVolumes: 
     type: boolean
   supportsAutoDatastore: 
@@ -71,8 +68,7 @@ properties:
   hasParameters: 
     type: boolean
   canEnforceTags: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   disableRootDatastore: 
     type: boolean
   hasSnapshots: 
@@ -88,35 +84,28 @@ properties:
   planRequiresPool: 
     type: boolean
   hasFolders: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   optionTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       $ref: optionType.yaml
   customOptionTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       $ref: optionType.yaml
   networkTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       $ref: networkType.yaml
   storageTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       $ref: storageType.yaml
   rootStorageTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       $ref: storageType.yaml
   controllerTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       $ref: controllerType.yaml

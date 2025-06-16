@@ -16,11 +16,9 @@ properties:
       category: 
         type: string
   reportTitle: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   filterTitle: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
     type: string
   dateCreated: 
@@ -30,19 +28,16 @@ properties:
     type: string
     format: date-time
   startDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   endDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   config: 
     type: object
     properties: 
       reportType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       startDate: 
         type: string
       endDate: 
@@ -70,5 +65,4 @@ properties:
         data: 
           type: string
         displayOrder: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]

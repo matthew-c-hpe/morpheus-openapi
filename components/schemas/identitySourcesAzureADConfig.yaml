@@ -77,15 +77,13 @@ properties:
       azureAppId: 
         type: string
       azureAppSecret: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       roleLinkAttributeName: 
         type: string
       publicKey: 
         type: string
       azureAppSecretHash: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
   roleMappings: 
     type: array
     items: 
@@ -94,8 +92,7 @@ properties:
         sourceRoleName: 
           type: string
         sourceRoleFqn: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         mappedRole: 
           type: object
           properties: 

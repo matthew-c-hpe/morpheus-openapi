@@ -19,9 +19,8 @@ properties:
       linuxPassword: 
         type: string
       linuxKeyPairId: 
-        type: integer
+        type: [ integer, 'null' ]
         format: int64
-        nullable: true
       windowsUsername: 
         type: string
       windowsPassword: 

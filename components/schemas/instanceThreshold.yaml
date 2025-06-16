@@ -41,25 +41,20 @@ properties:
     type: integer
     format: int64
   minNetwork: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   networkEnabled: 
     type: boolean
   iopsEnabled: 
     type: boolean
   minIops: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   maxIops: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   comment: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   zoneId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   dateCreated: 
     type: string
     format: date-time

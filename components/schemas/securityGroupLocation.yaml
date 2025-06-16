@@ -6,13 +6,11 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
     type: string
   iacId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   zone: 
     type: object
     properties: 
@@ -32,8 +30,6 @@ properties:
   status: 
     type: string
   priority: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   groupLayer: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

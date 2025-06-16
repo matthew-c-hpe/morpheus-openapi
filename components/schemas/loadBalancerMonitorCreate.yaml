@@ -10,6 +10,5 @@ monitorTimeout:
   type: integer
   format: int64
 config:
-  type: object
-  nullable: true
+  type: [ object, 'null' ]
   description: Configuration object with parameters that vary by type.

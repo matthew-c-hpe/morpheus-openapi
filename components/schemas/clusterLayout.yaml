@@ -86,8 +86,7 @@ properties:
           type: integer
           format: int64
         maxNodeCount: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         dynamicCount: 
           type: boolean
         installContainerRuntime: 
@@ -101,8 +100,7 @@ properties:
         category: 
           type: string
         config: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         containerType: 
           type: object
           properties: 
@@ -110,13 +108,11 @@ properties:
               type: integer
               format: int64
             account: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             name: 
               type: string
             labels:
-              type: array
-              nullable: true
+              type: [ array, 'null' ]
               items:
                 type: string
             shortName: 
@@ -136,8 +132,7 @@ properties:
                 code: 
                   type: string
             virtualImage: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             category: 
               type: string
             config: 
@@ -173,17 +168,13 @@ properties:
             externalDelete: 
               type: boolean
         provisionService: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         planCategory: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         namePrefix: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         nameSuffix: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         forceNameIndex: 
           type: boolean
         loadBalance: 
@@ -209,13 +200,11 @@ properties:
           type: integer
           format: int64
         account: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         name: 
           type: string
         labels:
-          type: array
-          nullable: true
+          type: [ array, 'null' ]
           items:
             type: string
         code: 
@@ -231,17 +220,13 @@ properties:
             code: 
               type: string
         externalId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         externalType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         deploymentId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         status: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         file: 
           type: object
           properties: 
@@ -251,24 +236,19 @@ properties:
             sourceType: 
               type: string
             contentRef: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             contentPath: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             repository: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             content: 
               type: string
         config: 
           type: object
         createdBy: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         updatedBy: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         dateCreated: 
           type: string
           format: date-time

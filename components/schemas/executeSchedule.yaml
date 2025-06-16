@@ -6,18 +6,15 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   visibility: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enabled: 
     type: boolean
   scheduleType: 
     type: string
   scheduleTimezone: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   cron: 
     type: string
   dateCreated: 

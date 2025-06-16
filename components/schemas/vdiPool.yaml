@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   minIdle: 
     type: integer
     format: int64
@@ -24,45 +23,33 @@ properties:
     type: integer
     format: int64
   persistentUser: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   recyclable: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   enabled: 
     type: boolean
   autoCreateLocalUserOnReservation: 
     type: boolean
   allowHypervisorConsole: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   allowCopy: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   allowPrinter: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   allowFileshare: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   guestConsoleJumpHost: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsoleJumpPort: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsoleJumpUsername: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsoleJumpPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsoleJumpKeypair: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   gateway: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id:
         type: integer
@@ -94,8 +81,7 @@ properties:
       username: 
         type: string
   config: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       group: 
         type: object
@@ -144,19 +130,16 @@ properties:
           noAgent: 
             type: boolean
           smbiosAssetTag: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           nestedVirtualization: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           vmwareFolderId: 
             type: string
           resourcePoolId: 
             type: integer
             format: int64
           poolProviderType: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
       volumes: 
         type: array
         items: 
@@ -180,8 +163,7 @@ properties:
               type: integer
               format: int64
             maxIOPS: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             datastoreId: 
               type: string
             vId: 
@@ -198,8 +180,7 @@ properties:
           code: 
             type: string
       storageControllers: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
           properties: 
@@ -209,8 +190,7 @@ properties:
             name:
               type: string
             active:
-              type: boolean
-              nullable: true
+              type: [ boolean, 'null' ]
             typeId:
               type: integer
               format: int64
@@ -223,8 +203,7 @@ properties:
             maxDevices:
               type: number
             removable:
-              type: boolean
-              nullable: true
+              type: [ boolean, 'null' ]
             editable:
               type: boolean
             reservedUnitNumber:
@@ -288,8 +267,7 @@ properties:
             type: integer
             format: int64
       loadBalancer: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items: 
           type: object
       hideLock: 
@@ -332,22 +310,18 @@ properties:
             name: 
               type: string
             controller: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             datastore: 
               type: string
             displayOrder: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             size: 
               type: integer
               format: int64
             mountPoint: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
   group: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -355,8 +329,7 @@ properties:
       name: 
         type: string
   cloud: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer

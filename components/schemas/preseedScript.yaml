@@ -14,8 +14,7 @@ properties:
   fileName: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   content: 
     type: string
   createdBy: 

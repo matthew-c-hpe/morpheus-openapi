@@ -56,10 +56,8 @@ properties:
   statusMessage: 
     type: string
   lastSync: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastSyncDuration: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   credential: 
     $ref: creds.yaml

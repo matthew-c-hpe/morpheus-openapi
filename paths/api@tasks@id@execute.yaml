@@ -76,8 +76,7 @@ post:
                         type: integer
                         format: int64
                       processId:
-                        type: string
-                        nullable: true
+                        type: [ string, 'null' ]
               - $ref: ../components/schemas/200-success.yaml
           examples:
             Successful Execution Response:

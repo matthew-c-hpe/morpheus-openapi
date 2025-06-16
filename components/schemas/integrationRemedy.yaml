@@ -39,21 +39,17 @@ properties:
       company: 
         type: string
       remedyIgnoreSSLErrors: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
   status: 
     type: string
   statusDate: 
     type: string
     format: date-time
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastSync: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastSyncDuration: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   credential: 
     $ref: creds.yaml

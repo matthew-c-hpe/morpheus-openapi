@@ -27,8 +27,7 @@ properties:
       blueprintName:
         type: string
       description:
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       templateId:
         type: integer
         format: int64

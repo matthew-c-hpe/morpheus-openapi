@@ -83,14 +83,11 @@ post:
             - type: object
               properties:
                 msg:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 errors:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 errorCode:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                 inProgress:
                   type: boolean
             - $ref: ../components/schemas/200-success.yaml

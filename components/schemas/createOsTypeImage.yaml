@@ -10,10 +10,8 @@ properties:
     type: integer
     description: id of virtualImage
   provisionType: 
-    type: integer
+    type: [ integer, 'null' ]
     description: id of provisionType
-    nullable: true
   zone: 
-    type: integer
+    type: [ integer, 'null' ]
     description: id of cloud/zone
-    nullable: true

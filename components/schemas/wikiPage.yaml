@@ -10,11 +10,9 @@ properties:
   category: 
     type: string
   refId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   format: 
     type: string
   content: 

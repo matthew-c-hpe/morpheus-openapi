@@ -11,14 +11,12 @@ properties:
     type: string
     description: Display Name
   labels: 
-    type: array
+    type: [ array, 'null' ]
     description: Array of label strings, can be used for filtering.
-    nullable: true
     items:
       type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Description
   site:
     type: object
@@ -64,20 +62,16 @@ properties:
     type: string
     description: Secondary DNS Server
   gatewayIPv6: 
-    type: string
+    type: [ string, 'null' ]
     description: IPv6 Network Gateway 
-    nullable: true
   netmaskIPv6: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dnsPrimaryIPv6: 
-    type: string
+    type: [ string, 'null' ]
     description: Primary IPv6 DNS Server
-    nullable: true
   dnsSecondaryIPv6: 
-    type: string
+    type: [ string, 'null' ]
     description: Secondary IPv6 DNS Server
-    nullable: true
   cidrIPv6: 
     type: string
     description: IPv6 Network CIDR
@@ -85,15 +79,13 @@ properties:
     type: integer
     format: int64
   pool: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
     description: Network Pool ID
-    nullable: true
   poolIPv6: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
     description: IPv6 Network Pool ID
-    nullable: true
   allowStaticOverride: 
     type: boolean
     description: Allow IP Override
@@ -134,9 +126,8 @@ properties:
     type: boolean
     description: Bypass Proxy for Appliance URL
   noProxy: 
-    type: string
+    type: [ string, 'null' ]
     description: Comma-separated list of ip addresses or name servers to exclude proxy traversal for. Typically locally routable servers are excluded.
-    nullable: true
   visibility: 
     type: string
     description: Visibility, private or public.

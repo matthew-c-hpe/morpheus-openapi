@@ -85,8 +85,7 @@ properties:
         ip: 
           type: string
         port: 
-          type: integer
-          nullable: true
+          type: [ integer, 'null' ]
         name:
           type: string
   layout: 
@@ -117,11 +116,9 @@ properties:
   displayName:
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   environment: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   config:
     type: object
     additionalProperties: true
@@ -137,20 +134,16 @@ properties:
           - type: boolean
           - type: string
       securityGroups:
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
           properties:
             id:
-              type: string
-              nullable: true  
+              type: [ string, 'null' ]  
       smbiosAssetTag: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       nestedVirtualization: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       vmwareFolderId: 
         type: string
       customOptions: 
@@ -161,14 +154,12 @@ properties:
             format: int64
           - type: string
       poolProviderType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       userGroup: 
         type: object
         properties: 
           id: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
       expireDays: 
         type: string
       shutdownDays: 
@@ -181,8 +172,7 @@ properties:
         type: object
         properties: 
           code: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
       site: 
         type: object
         properties: 
@@ -190,8 +180,7 @@ properties:
             type: integer
             format: int64
       environmentPrefix: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       layout: 
         type: object
         properties: 
@@ -207,8 +196,7 @@ properties:
       memoryDisplay: 
         type: string
       expose: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
       createBackup: 
@@ -234,31 +222,25 @@ properties:
         type: integer
         format: int64
       lbInstances: 
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
   configGroup: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configRole: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   volumes: 
     type: array
     items: 
       type: object
       properties: 
         controllerId: 
-          type: integer
+          type: [ integer, 'null' ]
           format: int64
-          nullable: true
         datastoreId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         displayOrder: 
           type: integer
           format: int64
@@ -268,8 +250,7 @@ properties:
         uuid: 
           type: string
         maxIOPS: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         maxStorage: 
           type: integer
           format: int64
@@ -290,11 +271,9 @@ properties:
           type: integer
           format: int64
         unitNumber: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         controllerMountPoint: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
   controllers: 
     type: array
     items: 
@@ -327,30 +306,23 @@ properties:
       type: object
       properties: 
         id: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         network: 
           type: object
           properties: 
             id: 
-              type: integer
+              type: [ integer, 'null' ]
               format: int64
-              nullable: true
             group: 
-              type: integer
-              nullable: true
+              type: [ integer, 'null' ]
             subnet: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             dhcpServer: 
-              type: boolean
-              nullable: true
+              type: [ boolean, 'null' ]
             name: 
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
             pool: 
-              type: object
-              nullable: true
+              type: [ object, 'null' ]
               properties: 
                 id: 
                   type: integer
@@ -358,38 +330,31 @@ properties:
                 name: 
                   type: string
         ipAddress: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         networkInterfaceTypeId: 
-          type: integer
+          type: [ integer, 'null' ]
           format: int64
-          nullable: true
         ipMode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
   customOptions:
     type: object
   instanceVersion: 
     type: string
   labels: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: string
   tags: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
       properties:
         name:
           type: string
         value:
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
   evars: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
       properties:
@@ -413,12 +378,10 @@ properties:
     type: integer
     format: int64
   coresPerSocket: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   maxCpu: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   hourlyCost: 
     type: number
   hourlyPrice: 
@@ -431,8 +394,7 @@ properties:
       cost: 
         type: number
       currency: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       unit: 
         type: string
   dateCreated: 
@@ -444,11 +406,9 @@ properties:
   hostName: 
     type: string
   domainName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   environmentPrefix: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   firewallEnabled: 
     type: boolean
   networkLevel: 
@@ -456,33 +416,26 @@ properties:
   autoScale: 
     type: boolean
   instanceContext: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   currentDeployId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   locked: 
     type: boolean
   status: 
     type: string
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   errorMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   statusDate: 
     type: string
     format: date-time
   statusPercent: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   statusEta: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   userStatus: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   expireDays: 
     type: integer
     format: int64
@@ -518,9 +471,8 @@ properties:
   shutdownWarningSent: 
     type: boolean
   removalDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   createdBy: 
     type: object
     properties: 
@@ -536,11 +488,9 @@ properties:
         type: integer
         format: int64
       username: 
-        type: string
-    nullable: true
+        type: [ string, 'null' ]
   notes: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   stats: 
     type: object
     properties: 
@@ -565,17 +515,14 @@ properties:
       cpuUsageAvg: 
         type: number
   powerSchedule: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   isScalable: 
     type: boolean
   instanceThreshold: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   isBusy: 
     type: boolean
   apps: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object

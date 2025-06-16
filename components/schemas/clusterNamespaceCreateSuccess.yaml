@@ -8,10 +8,8 @@ properties:
   description: 
     type: string
   regionCode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
     type: string

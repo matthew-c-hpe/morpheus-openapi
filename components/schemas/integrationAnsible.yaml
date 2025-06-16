@@ -37,13 +37,11 @@ properties:
     type: object
     properties: 
       inventory: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       defaultBranch: 
         type: string
       cacheEnabled: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       ansiblePlaybooks: 
         type: string
       ansibleRoles: 
@@ -66,14 +64,11 @@ properties:
     type: string
     format: date-time
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastSync: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastSyncDuration:
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   credential: 
     $ref: creds.yaml

@@ -10,7 +10,6 @@ properties:
         url: 
           type: string
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         type: 
           type: string

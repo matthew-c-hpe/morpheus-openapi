@@ -9,8 +9,7 @@ properties:
   name: 
     type: string
   code: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   taskType: 
     type: object
     properties: 
@@ -36,16 +35,13 @@ properties:
       - operationalWorkflowId
     properties: 
       operationalWorkflowId: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
         description: Operational Workflow ID
       operationalWorkflowName: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
         description: Operational Workflow Name
   resultType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   executeTarget: 
     type: string
   retryable: 

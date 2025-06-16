@@ -12,42 +12,32 @@ properties:
   sourceNetwork: 
     type: string
   destinationNetwork: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   translatedNetwork: 
     type: string
   sourcePorts: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   destinationPorts: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   translatedPorts: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   priority: 
     type: integer
     format: int32
   protocol: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   matchIpv6DestinationPrefix: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   translatedIpv4SourcePrefix: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   syncSource: 
     type: string
   internalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
     type: string
   providerId: 

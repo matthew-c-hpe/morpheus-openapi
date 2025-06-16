@@ -1,11 +1,9 @@
 type: object
 properties: 
   id: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   name: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   type: 
     type: string

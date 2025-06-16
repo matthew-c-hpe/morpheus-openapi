@@ -6,16 +6,13 @@ properties:
   name: 
     type: string
   code: 
-    type: string
+    type: [ string, 'null' ]
     description: Useful shortcode for provisioning naming schemes and export reference.
-    nullable: true
   category:
-    type: string
+    type: [ string, 'null' ]
     description: Catalog Item Type category
-    nullable: true
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   labels:
     type: array
     items: 
@@ -38,23 +35,17 @@ properties:
   visibility:
     type: string
   layoutCode:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   blueprint: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   appSpec:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   config: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   instanceSpec:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   workflow:
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id:
         type: integer
@@ -62,30 +53,24 @@ properties:
       name:
         type: string
   content: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   formType: 
-    type: string
+    type: [ string, 'null' ]
     enum:
       - optionTypes
       - form
-    nullable: true
   form:
-    type: object
+    type: [ object, 'null' ]
     description: Form object that contains input options and/or field groups
-    nullable: true
   formConfig:
-    type: object
+    type: [ object, 'null' ]
     description: Form config object
-    nullable: true
   optionTypes: 
-    type: array
+    type: [ array, 'null' ]
     items:
       $ref: optionType.yaml
-    nullable: true
   createdBy: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   owner: 
     type: object
     properties: 

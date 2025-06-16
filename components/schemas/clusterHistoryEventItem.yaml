@@ -19,44 +19,35 @@ properties:
       name: 
         type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refType: 
     type: string
   refId: 
     type: integer
     format: int64
   subType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   subId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   zoneId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   integrationId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   instanceId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   containerId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serverId: 
     type: integer
     format: int64
   containerName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   displayName: 
     type: string
   status: 
     type: string
   reason: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   percent: 
     type: integer
     format: int64
@@ -66,11 +57,9 @@ properties:
   message: 
     type: string
   output: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   error: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   startDate: 
     type: string
     format: date-time

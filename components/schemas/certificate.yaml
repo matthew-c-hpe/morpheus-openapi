@@ -4,18 +4,15 @@ id:
 name: 
   type: string
 description: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 domainName: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 accountId: 
   type: integer
   format: int64
 integrationId: 
-  type: integer
+  type: [ integer, 'null' ]
   format: int64
-  nullable: true
 enabled: 
   type: boolean
 generated: 
@@ -31,17 +28,12 @@ type:
       type: integer
       format: int64
     code: 
-      type: string
-  nullable: true
+      type: [ string, 'null' ]
 category: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 commonName: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 certType: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 keyFileMD5: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]

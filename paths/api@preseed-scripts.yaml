@@ -65,8 +65,7 @@ post:
                   preseedScript:
                     $ref: ../components/schemas/preseedScript.yaml
                   errorCode:
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
               - $ref: ../components/schemas/200-success-expanded.yaml
           examples:
             Preseed Script Response:

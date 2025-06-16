@@ -36,17 +36,14 @@ properties:
   customCoresPerSocket: 
     type: boolean
   coresPerSocket: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   storageTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
   rootStorageTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
   addVolumes: 
@@ -56,20 +53,15 @@ properties:
   rootDiskCustomizable: 
     type: boolean
   hostDiskMode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   hasDatastore: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lvmSupported: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   minDisk: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   maxDisk: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   datastores: 
     type: object
     properties: 
@@ -93,13 +85,11 @@ properties:
         name: 
           type: string
   cpuOptions: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   memoryOptions: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   rootCustomSizeOptions: 
@@ -109,7 +99,6 @@ properties:
   customCores: 
     type: boolean
   maxDisks: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   memorySizeType: 
     type: string

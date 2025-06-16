@@ -50,8 +50,7 @@ post:
             - securityGroupIds
           properties:
             securityGroupIds:
-              type: array
-              nullable: true
+              type: [ array, 'null' ]
               items:
                 type: integer
                 format: int64

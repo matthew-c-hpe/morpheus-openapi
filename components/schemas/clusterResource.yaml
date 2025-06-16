@@ -12,11 +12,8 @@ properties:
   metadata: 
     type: object
   spec:
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   config: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   rawSec: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]

@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   labels:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: string
   type: 
@@ -21,8 +20,7 @@ properties:
       code: 
         type: string
   workflow: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     description: Task object for workflow type jobs.
     properties: 
       id: 
@@ -31,8 +29,7 @@ properties:
       name: 
         type: string
   task: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     description: Task object for task type jobs.
     properties: 
       id: 
@@ -41,8 +38,7 @@ properties:
       name: 
         type: string
   securityPackage: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     description: Task object for security scan type jobs.
     properties: 
       id: 
@@ -51,29 +47,22 @@ properties:
       name: 
         type: string
   jobSummary: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   scheduleMode:
     oneOf: 
-      - type: string
-        nullable: true
+      - type: [ string, 'null' ]
       - type: integer
         format: int64
   dateTime: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   namespace: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enabled: 
     type: boolean
   dateCreated: 
@@ -86,11 +75,9 @@ properties:
     type: string
     format: date-time
   lastResult: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   createdBy: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -100,11 +87,9 @@ properties:
       displayName: 
         type: string
   targetType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   targets: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
       properties: 
@@ -119,21 +104,17 @@ properties:
           type: integer
           format: int64
   scanPath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Scan Checklist. Only applies to type scap-package.
     example: "/test_CentOS_Linux_7_Benchmark_v3/test_CentOS_Linux_7_Benchmark_v3.1.1-xccdf.xml"
   securityProfile: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     description: Security Profile. Only applies to type scap-package.
     example: "xccdf_org.cisecurity.benchmarks_profile_Level_2_-_Server"
   customConfig: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   customOptions: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       checkTime: 
         type: integer

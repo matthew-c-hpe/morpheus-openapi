@@ -8,11 +8,9 @@ properties:
   externalId: 
     type: string
   internalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalUniqueId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   name: 
     type: string
   externalName: 
@@ -84,8 +82,7 @@ properties:
     type: integer
     format: int64
   folderId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sshHost: 
     type: string
   sshPort: 
@@ -96,8 +93,7 @@ properties:
   internalIp: 
     type: string
   volumeId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   platform: 
     type: string
   platformVersion: 
@@ -152,20 +148,15 @@ properties:
   status: 
     type: string
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   errorMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   statusDate: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   statusPercent: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   statusEta: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   powerState: 
     type: string
   agentInstalled: 
@@ -179,8 +170,7 @@ properties:
     type: integer
     format: int64
   coresPerSocket: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   maxMemory: 
     type: integer
     format: int64
@@ -203,8 +193,7 @@ properties:
       name: 
         type: string
   serverOs: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   volumes: 
     type: array
     items: 
@@ -216,11 +205,9 @@ properties:
         name: 
           type: string
         controllerId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         controllerMountPoint: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         resizeable: 
           type: boolean
         planResizable: 
@@ -228,16 +215,14 @@ properties:
         rootVolume: 
           type: boolean
         unitNumber: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         typeId: 
           type: integer
           format: int64
         configurableIOPS: 
           type: boolean
         datastoreId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         maxStorage: 
           type: integer
           format: int64
@@ -245,8 +230,7 @@ properties:
           type: integer
           format: int64
         maxIOPS: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         uuid: 
           type: string
   controllers: 
@@ -262,41 +246,31 @@ properties:
           type: integer
           format: int64
         refType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         refId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         name: 
           type: string
         internalId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         externalId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         uniqueId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         publicIpAddress: 
           type: string
         publicIpv6Address: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         ipAddress: 
           type: string
         ipv6Address: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         ipSubnet: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         ipv6Subnet: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         dhcp: 
           type: boolean
         active: 
@@ -314,29 +288,21 @@ properties:
             name: 
               type: string
         subnet: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         networkGroup: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         networkPosition: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         networkPool: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         networkDomain: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         type: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         ipMode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         macAddress: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
   labels: 
     type: array
     items: 
@@ -353,8 +319,7 @@ properties:
   enabled: 
     type: boolean
   tagCompliant: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   containers: 
     type: array
     items: 
@@ -363,17 +328,12 @@ properties:
   guestConsolePreferred: 
     type: boolean
   guestConsoleType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsoleUsername: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsolePassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsolePasswordHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   guestConsolePort: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

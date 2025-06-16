@@ -76,8 +76,7 @@ properties:
       type: object
       properties: 
         sourceRoleName: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         sourceRoleFqn: 
           type: string
         mappedRole: 

@@ -24,11 +24,9 @@ loadBalancer:
 name: 
   type: string
 code: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 category: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 visibility: 
   type: string
 description: 
@@ -42,26 +40,21 @@ monitorTimeout:
   type: integer
   format: int64
 sendData: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 sendVersion: 
   type: string
 sendType: 
   type: string
 receiveData: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 receiveCode: 
   type: string
 disabledData: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 monitorUsername: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 monitorPassword: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 monitorDestination: 
   type: string
 monitorReverse: 
@@ -71,8 +64,7 @@ monitorTransparent:
 monitorAdaptive: 
   type: boolean
 aliasAddress: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 aliasPort: 
   type: integer
   format: int64
@@ -85,12 +77,10 @@ monitorSource:
 status: 
   type: string
 statusMessage: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 statusDate: 
-  type: string
+  type: [ string, 'null' ]
   format: date-time
-  nullable: true
 enabled: 
   type: boolean
 maxRetry: 
@@ -103,13 +93,11 @@ riseCount:
   type: integer
   format: int64
 dataLength: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 config: 
   type: object
 createdBy: 
-  type: string
-  nullable: true
+  type: [ string, 'null' ]
 dateCreated: 
   type: string
   format: date-time

@@ -6,22 +6,18 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
     type: string
   state: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   snapshotType: 
     type: string
   snapshotCreated: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   zone: 
     type: object
     properties: 
@@ -31,11 +27,9 @@ properties:
       name: 
         type: string
   datastore: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   parentSnapshot: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   snapshotFiles:
     type: array
     items:
@@ -55,8 +49,7 @@ properties:
         exportPath:
           type: string
         volume:
-          type: object
-          nullable: true
+          type: [ object, 'null' ]
           properties:
             id:
               type: integer

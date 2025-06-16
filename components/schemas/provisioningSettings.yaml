@@ -27,11 +27,9 @@ properties:
       name: 
         type: string
   windowsPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   pxeRootPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   defaultTemplateType: 
     type: object
     properties: 

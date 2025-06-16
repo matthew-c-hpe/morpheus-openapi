@@ -6,55 +6,42 @@ properties:
   name: 
     type: string
   refType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
     description: (Assignee) Target Server ID
   status: 
     type: string
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   domainId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int32
-    nullable: true
   bus: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int32
-    nullable: true
   slot: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int32
-    nullable: true
   device: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int32
-    nullable: true
   vendorId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   productId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   functionId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int32
-    nullable: true
   uniqueId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   iommuGroup: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int32
-    nullable: true
   iommuDeviceCount: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int32
-    nullable: true
   type: 
     type: object
     properties: 
@@ -64,20 +51,16 @@ properties:
       name: 
         type: string
       family: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       busType: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       assignable: 
         type: boolean
       hotpluggable: 
         type: boolean
       vendorId: 
-        type: integer
+        type: [ integer, 'null' ]
         format: int32
-        nullable: true
       productId: 
-        type: integer
+        type: [ integer, 'null' ]
         format: int32
-        nullable: true

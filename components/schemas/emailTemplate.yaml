@@ -26,21 +26,17 @@ properties:
     description: |
       A unique code for the email template. This code is used to reference the email template and as a reference of the templates type.
   owner:
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties:
       id:
-        type: integer
+        type: [ integer, 'null' ]
         format: int64
-        nullable: true
       name:
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
     description: |
       The account that owns the email template is associated with. This is set by morpheus.
   accounts: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
       properties:

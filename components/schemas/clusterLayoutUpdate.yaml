@@ -4,13 +4,11 @@ properties:
     type: string
     description: Cluster layout name
   description: 
-    type: string
+    type: [ string, 'null' ]
     description: Cluster layout description
-    nullable: true
   labels: 
-    type: array
+    type: [ array, 'null' ]
     description: Array of label strings, can be used for filtering.
-    nullable: true
     items:
       type: string
   computeVersion: 

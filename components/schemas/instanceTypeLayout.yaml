@@ -14,8 +14,7 @@ properties:
       code: 
         type: string
   account: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -27,33 +26,28 @@ properties:
   name: 
     type: string
   labels:
-    type: array
+    type: [ array, 'null' ]
     description: Array of label strings, can be used for filtering.
-    nullable: true
     items: 
       type: string
   instanceVersion: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   creatable: 
     type: boolean
   memoryRequirement: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   sortOrder: 
     type: integer
     format: int64
   supportsConvertToManaged: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   provisionType: 
     $ref: provisionType.yaml
   taskSets: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   containerTypes: 
@@ -61,38 +55,31 @@ properties:
     items: 
       $ref: containerType.yaml
   mounts: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   ports: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   optionTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   environmentVariables: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   priceSets: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   specTemplates: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   tfvarSecret: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
     items:
       type: object
   permissions: 
@@ -112,19 +99,16 @@ properties:
           all: 
             type: boolean
           account: 
-            type: object
-            nullable: true
+            type: [ object, 'null' ]
             properties: 
               id: 
                 type: integer
                 format: int64
           sites: 
-            type: array
-            nullable: true
+            type: [ array, 'null' ]
             items:
               type: object
           plans: 
-            type: array
-            nullable: true
+            type: [ array, 'null' ]
             items:
               type: object

@@ -14,17 +14,13 @@ properties:
   enabled: 
     type: boolean
   author: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   websiteUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sourceCodeLocationUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   issueTrackerUrl: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   valid: 
     type: boolean
   hasValidUpdate: 
@@ -32,8 +28,7 @@ properties:
   status: 
     type: string
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   providers: 
     type: array
     items: 

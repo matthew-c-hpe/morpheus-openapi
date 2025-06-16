@@ -17,5 +17,4 @@ properties:
   customSize: 
     type: boolean
   customSizeOptions: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

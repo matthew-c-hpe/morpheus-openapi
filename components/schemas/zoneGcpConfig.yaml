@@ -30,26 +30,18 @@ properties:
         # - type: integer
         #   format: int64
   securityServer: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   certificateProvider: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   backupMode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   replicationMode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dnsIntegrationId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   serviceRegistryId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configManagementId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   privateKeyHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

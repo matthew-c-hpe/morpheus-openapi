@@ -31,8 +31,7 @@ properties:
   costingAccessKey: 
     type: string
   costingSecretKey: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   costingReportName:
     type: string
   applianceUrl: 
@@ -55,8 +54,7 @@ properties:
         # - type: integer
         #   format: int64
   securityServer: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   certificateProvider: 
     type: string
   backupMode: 
@@ -74,5 +72,4 @@ properties:
   secretKeyHash: 
     type: string
   costingSecretKeyHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

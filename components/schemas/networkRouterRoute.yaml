@@ -6,14 +6,11 @@ properties:
   name: 
     type: string
   code: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   priority: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   routeType: 
     type: string
   source: 
@@ -27,24 +24,19 @@ properties:
   defaultRoute: 
     type: boolean
   networkMtu: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalInterface: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   internalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
     type: string
   uniqueId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   providerId: 
     type: string
   externalType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   enabled: 
     type: boolean
   visible: 

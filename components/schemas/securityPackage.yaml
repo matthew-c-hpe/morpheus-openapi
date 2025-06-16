@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   labels:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: string
   description: 

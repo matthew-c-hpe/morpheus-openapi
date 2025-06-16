@@ -4,8 +4,7 @@ properties:
     type: integer
     format: int64
   name:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   items:
     type: array
     items:

@@ -78,13 +78,11 @@ post:
                   description: Client Secret
                   example: thisIsaClientSecretKeyPhrase
                 accessTokenValiditySeconds:
-                  type: integer
-                  nullable: true
+                  type: [ integer, 'null' ]
                   description: Length of time accessToken is valid in seconds.
                   example: 43200
                 refreshTokenValiditySeconds:
-                  type: integer
-                  nullable: true
+                  type: [ integer, 'null' ]
                   description: Length of time refreshToken is valid in seconds.
                   example: 43200
                 redirectUris:

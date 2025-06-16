@@ -15,8 +15,7 @@ properties:
       name: 
         type: string
   group: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   cloud: 
     type: object
     properties: 
@@ -28,58 +27,44 @@ properties:
       uuid: 
         type: string
   instance: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   server: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   cluster: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   user: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   plan: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
   tags: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   project: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refType: 
     type: string
   refId: 
     type: integer
     format: int64
   refUuid: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   refName: 
     type: string
   refCategory: 
     type: string
   resourceId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resourceUuid: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resourceType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resourceName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resourceExternalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resourceInternalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   interval: 
     type: string
   period: 
@@ -216,27 +201,22 @@ properties:
     type: integer
     format: int64
   powerState: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   powerDate: 
     type: string
     format: date-time
   runningMultiplier: 
     type: number
   usageType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   usageCategory: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastCostDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastActualDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   dateCreated: 
     type: string
     format: date-time
@@ -273,37 +253,31 @@ properties:
         itemId: 
           type: string
         itemType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         itemName: 
           type: string
         itemDescription: 
           type: string
         productId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         productCode: 
           type: string
         productName: 
           type: string
         itemSeller: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         itemAction: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         externalId: 
           type: string
         rateId: 
           type: string
         rateClass: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         rateUnit: 
           type: string
         rateTerm: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         usageType: 
           type: string
         usageCategory: 
@@ -322,11 +296,9 @@ properties:
           type: integer
           format: int64
         itemTerm: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         taxType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         regionCode: 
           type: string
         currency: 

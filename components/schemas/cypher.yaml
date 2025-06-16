@@ -8,13 +8,11 @@ properties:
     type: integer
     format: int64
   expireDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   dateCreated: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastUpdated: 
     type: string
     format: date-time

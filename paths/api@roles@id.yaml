@@ -47,21 +47,18 @@ put:
                   type: string
                   description: Authority (Name)
                 description:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                   description: Description
                 landingUrl:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                   description: An optional override for the default landing page after login for a user.
                 defaultPersona:
-                  type: string
+                  type: [ string, 'null' ]
                   enum:
                     - standard
                     - serviceCatalog
                     - vdi
                   description: Set the default persona by code.
-                  nullable: true
                 permissions: 
                   type: array
                   description: Set the access level for the specified permissions.

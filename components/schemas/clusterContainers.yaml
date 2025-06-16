@@ -9,8 +9,7 @@ properties:
     type: integer
     format: int64
   instance: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   containerType: 
     type: object
     properties: 
@@ -20,22 +19,18 @@ properties:
       code: 
         type: string
       category: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       name: 
         type: string
   containerTypeSet: 
     type: object
     properties: 
       id: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       code: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       category: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
   server: 
     type: object
     properties: 
@@ -74,18 +69,14 @@ properties:
     type: object
     properties: 
       id: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       code: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       name: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
   dateCreated: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastUpdated: 
     type: string
     format: date-time
@@ -96,17 +87,13 @@ properties:
   userStatus: 
     type: string
   environmentPrefix: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configGroup: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configRole: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   stats: 
     type: object
     properties: 
@@ -152,36 +139,27 @@ properties:
   runtimeInfo: 
     type: object
   containerVersion: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   repositoryImage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   planCategory: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   hostname: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   domainName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   volumeCreated: 
     type: boolean
   containerCreated: 
     type: boolean
   maxStorage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   maxMemory: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   maxCores: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   maxCpu: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   hourlyPrice:
     type: number
   availableActions: 

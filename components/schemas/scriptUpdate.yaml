@@ -4,9 +4,8 @@ properties:
     type: string
     description: Script name
   labels: 
-    type: array
+    type: [ array, 'null' ]
     description: Array of label strings, can be used for filtering.
-    nullable: true
     items:
       type: string
   category: 

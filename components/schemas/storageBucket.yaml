@@ -40,11 +40,8 @@ properties:
   copyToStore: 
     type: boolean
   retentionPolicyType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   retentionPolicyDays: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   retentionProvider: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

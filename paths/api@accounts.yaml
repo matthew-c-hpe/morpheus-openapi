@@ -61,8 +61,7 @@ post:
                   description: Name
                   example: Test Tenant
                 description:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                   description: Description
                   example: Testing Tenant Creation
                 role:
@@ -76,8 +75,7 @@ post:
                       format: int64
                       example: 3
                 subdomain:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
                   description: >-
                     The subdomain. This will be part of the login URL and
                     username for sub tenant users.

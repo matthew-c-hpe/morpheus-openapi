@@ -57,8 +57,7 @@ properties:
     type: integer
     format: int32
   maxDisk: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lvmSupported: 
     type: boolean
   datastores: 
@@ -96,30 +95,24 @@ properties:
         name: 
           type: string
   cpuOptions: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
   coreOptions: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
   memoryOptions: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: object
   rootCustomSizeOptions: 
-    type: object
-    nullable: true  
+    type: [ object, 'null' ]  
   customSizeOptions: 
-    type: object
-    nullable: true  
+    type: [ object, 'null' ]  
   customCores: 
     type: boolean
   maxDisks: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   memorySizeType: 
     type: string

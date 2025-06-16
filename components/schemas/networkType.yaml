@@ -8,14 +8,11 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   category: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   creatable: 
     type: boolean
   overlay: 

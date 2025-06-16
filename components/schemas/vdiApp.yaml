@@ -6,16 +6,13 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   launchPrefix: 
     type: string
   iconPath: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   logo: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time

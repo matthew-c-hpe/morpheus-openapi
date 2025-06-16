@@ -62,9 +62,8 @@ post:
                   description: A name for the security package
                   example: Sample Security Package
                 labels:
-                    type: array
+                    type: [ array, 'null' ]
                     description: Array of label strings, can be used for filtering.
-                    nullable: true
                     items: 
                       type: string
                 type: 

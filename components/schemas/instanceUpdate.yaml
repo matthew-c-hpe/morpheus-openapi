@@ -59,8 +59,7 @@ properties:
             name:
               type: string
             value:
-              type: string
-              nullable: true
+              type: [ string, 'null' ]
         example:
           - name: hello
       powerScheduleType:

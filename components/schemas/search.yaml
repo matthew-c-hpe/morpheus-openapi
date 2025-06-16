@@ -15,17 +15,14 @@ properties:
           type: string
           description: Name
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         type: 
           type: string
         dateCreated: 
-          type: string
+          type: [ string, 'null' ]
           format: date-time
-          nullable: true
         score: 
-          type: number
-          nullable: true
+          type: [ number, 'null' ]
   query: 
     type: string
   took: 

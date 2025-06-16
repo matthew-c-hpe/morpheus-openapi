@@ -8,9 +8,8 @@ properties:
     type: string
     description: Spec template name
   labels: 
-    type: array
+    type: [ array, 'null' ]
     description: Array of label strings, can be used for filtering.
-    nullable: true
     items:
       type: string
   type:

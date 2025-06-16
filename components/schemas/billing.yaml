@@ -32,8 +32,7 @@ properties:
         zoneUUID: 
           type: string
         zoneCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         startDate: 
           type: string
           format: date-time

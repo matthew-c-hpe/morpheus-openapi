@@ -8,18 +8,15 @@ properties:
   code:
     type: string
   description:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   localizedName:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   collapsible:
     type: boolean
   defaultCollapsed:
     type: boolean
   visibleOnCode:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   options:
     type: array
     items:

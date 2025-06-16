@@ -6,14 +6,11 @@ properties:
   name: 
     type: string
   internalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   requestType: 
     type: string
   account: 
@@ -33,13 +30,11 @@ properties:
       name: 
         type: string
   accountIntegration: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
     type: string
   errorMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time
@@ -59,24 +54,19 @@ properties:
         name: 
           type: string
         externalId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         externalName: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         internalId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         approvedBy: 
           type: string
         deniedBy: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         status: 
           type: string
         errorMessage: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         dateCreated: 
           type: string
           format: date-time
@@ -87,9 +77,8 @@ properties:
           type: string
           format: date-time
         dateDenied: 
-          type: string
+          type: [ string, 'null' ]
           format: date-time
-          nullable: true
         approval: 
           type: object
           properties: 

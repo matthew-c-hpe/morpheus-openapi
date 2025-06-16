@@ -25,18 +25,15 @@ properties:
     type: string
     format: date-time
   checks: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: integer
   checkGroups: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: integer
   apps: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: integer
   contacts: 

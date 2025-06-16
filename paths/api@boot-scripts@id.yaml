@@ -58,8 +58,7 @@ put:
               - type: object
                 properties: 
                   errorCode:
-                    type: string
-                    nullable: true
+                    type: [ string, 'null' ]
                   inProgress:
                     type: boolean
               - $ref: ../components/schemas/200-success-expanded.yaml

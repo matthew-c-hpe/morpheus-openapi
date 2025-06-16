@@ -13,10 +13,9 @@ put:
           type: object
           properties:
             storageProviderId:
-              type: integer
+              type: [ integer, 'null' ]
               format: int64
               description: Optional storage provider to use.
-              nullable: true
         examples:
           Import Snapshot Request:
             value:

@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   labels:
     type: array
     items: 
@@ -34,20 +33,15 @@ properties:
   isCloudInit: 
     type: boolean
   sshUsername: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sshPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sshPasswordHash: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sshKey: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   osType: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -57,8 +51,7 @@ properties:
       name: 
         type: string
       description: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       vendor: 
         type: string
       category: 
@@ -73,33 +66,26 @@ properties:
       platform: 
         type: string
   minRam: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   minRamGB: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   minDisk: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   minDiskGB: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   rawSize: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   rawSizeGB: 
-    type: number
-    nullable: true
+    type: [ number, 'null' ]
   trialVersion: 
     type: boolean
   virtioSupported: 
     type: boolean
   uefi: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   isAutoJoinDomain: 
     type: boolean
   vmToolsInstalled: 
@@ -113,17 +99,13 @@ properties:
   fipsEnabled: 
     type: boolean
   userData: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   consoleKeymap: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   storageProvider: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   visibility: 
     type: string
   accounts: 

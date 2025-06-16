@@ -4,9 +4,8 @@ properties:
     type: string
     description: A name for the image build
   description: 
-    type: string
+    type: [ string, 'null' ]
     description: A description for the image build
-    nullable: true
   type: 
     type: string
     description: The image builder type.
@@ -50,16 +49,14 @@ properties:
     type: string
     description: SSH Password
   storageProvider: 
-    type: string
+    type: [ string, 'null' ]
     description: Storage Provider
-    nullable: true
   isCloudInit: 
     type: string
     description: Cloud Init
   buildOutputName: 
-    type: string
+    type: [ string, 'null' ]
     description: Build Output Name
-    nullable: true
   conversionFormats: 
     description: Conversion Formats
     anyOf:

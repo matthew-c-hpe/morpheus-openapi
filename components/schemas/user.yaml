@@ -60,21 +60,16 @@ properties:
       name: 
         type: string
   linuxUsername: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   linuxPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   linuxKeyPairId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   windowsUsername: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   windowsPassword: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   defaultPersona: 
     type: object
     properties:
@@ -92,8 +87,7 @@ properties:
     type: string
     format: date-time
   access:
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       features:
         type: array

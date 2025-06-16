@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   code: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   datastoreType:
     type: object
     properties:
@@ -25,13 +24,11 @@ properties:
   visibility: 
     type: string
   storageSize: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   freeSpace: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   drsEnabled: 
     type: boolean
   active: 
@@ -112,13 +109,11 @@ properties:
             type: integer
             format: int64
       sites:
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
       plans:
-        type: array
-        nullable: true
+        type: [ array, 'null' ]
         items:
           type: object
   datastores: 

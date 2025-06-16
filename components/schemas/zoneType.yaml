@@ -136,61 +136,43 @@ properties:
               name: 
                 type: string
               description: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               code: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               fieldName: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               fieldLabel: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               fieldCode: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               fieldContext: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               fieldGroup: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               fieldClass: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               fieldAddOn: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               fieldComponent: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               fieldInput: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               placeHolder: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               verifyPattern: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               helpBlock: 
                 type: string
               helpBlockFieldCode: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               defaultValue: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               optionSource: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               optionSourceType: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               optionList: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               type: 
                 type: string
               advanced: 
@@ -209,35 +191,27 @@ properties:
                 type: integer
                 format: int64
               wrapperClass: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               enabled: 
                 type: boolean
               noBlank: 
                 type: boolean
               dependsOnCode: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               visibleOnCode: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               requireOnCode: 
-                type: string
-                nullable: true
+                type: [ string, 'null' ]
               contextualDefault: 
                 type: boolean
               displayValueOnDetails: 
-                type: boolean
-                nullable: true
+                type: [ boolean, 'null' ]
               showOnCreate: 
-                type: boolean
-                nullable: true
+                type: [ boolean, 'null' ]
               showOnEdit: 
-                type: boolean
-                nullable: true
+                type: [ boolean, 'null' ]
               localCredential: 
-                type: boolean
-                nullable: true
+                type: [ boolean, 'null' ]
         displayOrder: 
           type: integer
           format: int64
@@ -252,61 +226,43 @@ properties:
         name: 
           type: string
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         code: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldName: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldLabel: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldCode: 
           type: string
         fieldContext: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldGroup: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldClass: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldAddOn: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldComponent: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         fieldInput: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         placeHolder: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         verifyPattern: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         helpBlock: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         helpBlockFieldCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         defaultValue: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         optionSource: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         optionSourceType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         optionList: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         type: 
           type: string
         advanced: 
@@ -330,32 +286,24 @@ properties:
           type: integer
           format: int64
         wrapperClass: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         enabled: 
           type: boolean
         noBlank: 
           type: boolean
         dependsOnCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         visibleOnCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         requireOnCode: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         contextualDefault: 
           type: boolean
         displayValueOnDetails: 
-          type: boolean
-          nullable: true
+          type: [ boolean, 'null' ]
         showOnCreate: 
-          type: boolean
-          nullable: true
+          type: [ boolean, 'null' ]
         showOnEdit: 
-          type: boolean
-          nullable: true
+          type: [ boolean, 'null' ]
         localCredential: 
-          type: boolean
-          nullable: true
+          type: [ boolean, 'null' ]

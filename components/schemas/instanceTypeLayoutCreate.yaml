@@ -8,8 +8,7 @@ properties:
     type: string
     description: Layout name
   labels:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: string
   instanceVersion: 

@@ -6,13 +6,11 @@ properties:
   attachmentType: 
     type: string
   app: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   available: 
     type: boolean
   check: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   checkGroup: 
     type: object
     properties: 
@@ -22,12 +20,10 @@ properties:
       name: 
         type: string
   checkStatus: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   endDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   health: 
     type: integer
     format: int64
@@ -40,15 +36,12 @@ properties:
         type: integer
         format: int64
   lastCheckTime: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastError: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   name: 
     type: string
   severity: 

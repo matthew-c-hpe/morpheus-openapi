@@ -18,23 +18,18 @@ properties:
   displayName: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   subType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   subId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   zoneId: 
     type: integer
     format: int64
   integrationId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   appId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   instanceId: 
     type: integer
     format: int64
@@ -49,8 +44,7 @@ properties:
   status: 
     type: string
   reason: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   percent: 
     type: integer
     format: int64
@@ -58,14 +52,11 @@ properties:
     type: integer
     format: int64
   message: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   output: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   error: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   startDate: 
     type: string
     format: date-time
@@ -76,12 +67,10 @@ properties:
     type: integer
     format: int64
   resultType:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resultId:
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   dateCreated: 
     type: string
     format: date-time
@@ -126,25 +115,21 @@ properties:
             name: 
               type: string
         description: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         refType: 
           type: string
         refId: 
           type: integer
           format: int64
         subType: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         subId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         zoneId: 
           type: integer
           format: int64
         integrationId: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         instanceId: 
           type: integer
           format: int64
@@ -161,8 +146,7 @@ properties:
         status: 
           type: string
         reason: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         percent: 
           type: integer
           format: int64
@@ -170,14 +154,11 @@ properties:
           type: integer
           format: int64
         message: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         output: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         error: 
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
         startDate: 
           type: string
           format: date-time

@@ -8,16 +8,13 @@ properties:
   code:
     type: string
   description:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   context:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   locked:
     type: boolean
   labels:
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items: 
       type: string
   options:

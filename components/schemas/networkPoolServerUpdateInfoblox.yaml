@@ -9,43 +9,35 @@ properties:
     description: Can be used to enable / disable the network pool server.
     default: true
   serviceUrl: 
-    type: string
+    type: [ string, 'null' ]
     description: URL
-    nullable: true
     example: "https://infoblox-server/wapi/v2.9"
   serviceUsername: 
-    type: string
+    type: [ string, 'null' ]
     description: Username
-    nullable: true
   servicePassword: 
-    type: string
+    type: [ string, 'null' ]
     description: Password
-    nullable: true
   serviceThrottleRate: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
     description: Throttle Rate
-    nullable: true
     default: 0
   ignoreSsl: 
     type: boolean
     description: Disable SSL SNI Verification
   networkFilter: 
-    type: string
+    type: [ string, 'null' ]
     description: Network Filter
-    nullable: true
   zoneFilter: 
-    type: string
+    type: [ string, 'null' ]
     description: Zone Filter
-    nullable: true
   tenantMatch: 
-    type: string
+    type: [ string, 'null' ]
     description: Tenant Match
-    nullable: true
   serviceMode: 
-    type: string
+    type: [ string, 'null' ]
     description: IP Mode
-    nullable: true
     example: static
     default: static
     enum:
@@ -55,17 +47,15 @@ properties:
     type: object
     properties: 
       inventoryExisting: 
-        type: string
+        type: [ string, 'null' ]
         description: Inventory Existing
-        nullable: true
         default: off
         enum:
           - on
           - off
       extraAttributes: 
-        type: string
+        type: [ string, 'null' ]
         description: Extra Attributes
-        nullable: true
         example: '{"Date Assigned":"<%=dateCreated%>","Requestor":"<%=username%>"}'
   credential: 
     type: object

@@ -4,8 +4,7 @@ properties:
     type: integer
     format: int64
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   zone: 
     type: object
     properties: 
@@ -15,8 +14,7 @@ properties:
       name: 
         type: string
   parent: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -28,11 +26,9 @@ properties:
   externalId: 
     type: string
   regionCode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   iacId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   visibility: 
     type: string
   readOnly: 
@@ -47,8 +43,7 @@ properties:
     type: boolean
   config:
     anyOf:
-    - type: object
-      nullable: true
+    - type: [ object, 'null' ]
       description: Type VMware
       additionalProperties: false
     - type: object
@@ -74,8 +69,7 @@ properties:
         - billingAccount
       properties:
         projectId:
-          type: string
-          nullable: true
+          type: [ string, 'null' ]
           description: |
             Project ID can have lowercase letters, digits, or hyphens.
             It must start with a lowercase letter and end with a letter or number.
@@ -89,8 +83,7 @@ properties:
   name: 
     type: string
   displayName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   tenants: 
     type: array
     items: 

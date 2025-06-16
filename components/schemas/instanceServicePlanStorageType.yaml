@@ -6,8 +6,7 @@ properties:
   editable: 
     type: boolean
   optionTypes: 
-    type: array
-    nullable: true
+    type: [ array, 'null' ]
     items:
       type: object
   displayOrder: 
@@ -18,33 +17,27 @@ properties:
   volumeType: 
     type: string
   minStorage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   deletable: 
     type: boolean
   defaultType: 
     type: boolean
   createDatastore: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resizable: 
     type: boolean
   storageType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   allowSearch: 
     type: boolean
   volumeOptionSource: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   displayName: 
     type: string
   minIOPS: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   maxIOPS: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   hasDatastore: 
     type: boolean
   customSize: 
@@ -60,13 +53,10 @@ properties:
   enabled: 
     type: boolean
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   volumeCategory: 
     type: string
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   maxStorage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]

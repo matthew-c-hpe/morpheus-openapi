@@ -6,11 +6,9 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   controller:
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties:
       id:
         type: integer
@@ -18,20 +16,16 @@ properties:
       name:
         type: string
   controllerId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   controllerMountPoint: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   resizeable: 
-    type: boolean
-    nullable: true
+    type: [ boolean, 'null' ]
   rootVolume: 
     type: boolean
   unitNumber: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   deviceName: 
     type: string
   deviceDisplayName: 
@@ -69,8 +63,7 @@ properties:
   status: 
     type: string
   statusMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   configurableIOPS: 
     type: boolean
   maxStorage: 
@@ -83,8 +76,7 @@ properties:
     type: integer
     format: int64
   maxIOPS: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   uuid: 
     type: string
   active: 
@@ -115,48 +107,36 @@ properties:
       name: 
         type: string
   datastoreId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   datastoreOption:
     type: string
   storageGroup: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   namespace: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   storageServer: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   source: 
     type: string
   uniqueId:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   internalId:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId:
     type: string
   provisionType:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   copyType:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   fiberWwn:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   fileName:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   claimName:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sharePath:
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   sourceId:
     type: string
   sourceImage:

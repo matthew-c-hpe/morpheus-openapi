@@ -16,15 +16,12 @@ properties:
   availability: 
     type: number
   checkAgent: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   checkInterval: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   checkSpec: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   checkType: 
     type: object
     properties: 
@@ -46,8 +43,7 @@ properties:
       - $ref: checkPushConfig.yaml
       - $ref: checkVmConfig.yaml
   container:
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -57,8 +53,7 @@ properties:
   muted: 
     type: boolean
   createdBy: 
-    type: object
-    nullable: true
+    type: [ object, 'null' ]
     properties: 
       id: 
         type: integer
@@ -69,73 +64,57 @@ properties:
     type: string
     format: date-time
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   endDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   health: 
     type: integer
     format: int64
   inUptime: 
     type: boolean
   lastBoxStats: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastCheckStatus: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastError: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastErrorDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastMetric: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastRunDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastStats: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   lastSuccessDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastTimer: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   lastUpdated: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   lastWarningDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   name: 
     type: string
   nextRunDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   outageTime: 
     type: integer
     format: int64
   severity: 
     type: string
   startDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   deleted:
     type: boolean

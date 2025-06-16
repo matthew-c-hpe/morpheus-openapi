@@ -18,8 +18,7 @@ properties:
     items: 
       type: string
   code: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   type: 
     type: object
     properties: 
@@ -31,17 +30,13 @@ properties:
       code: 
         type: string
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalType: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   deploymentId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   status: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   file: 
     type: object
     properties: 
@@ -51,14 +46,11 @@ properties:
       sourceType: 
         type: string
       contentRef: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       contentPath: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       repository: 
-        type: string
-        nullable: true
+        type: [ string, 'null' ]
       content: 
         type: string
   config: 
@@ -66,8 +58,7 @@ properties:
   createdBy: 
     type: string
   updatedBy: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time

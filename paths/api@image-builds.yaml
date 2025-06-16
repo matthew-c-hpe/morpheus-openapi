@@ -62,8 +62,7 @@ post:
                 imageBuild:
                   $ref: ../components/schemas/imageBuild.yaml
                 errorCode:
-                  type: string
-                  nullable: true
+                  type: [ string, 'null' ]
             - $ref: ../components/schemas/200-success-expanded.yaml
           examples:
             Image Build Response:

@@ -3,5 +3,4 @@ properties:
   success: 
     type: boolean
   id: 
-    type: integer
-    nullable: true
+    type: [ integer, 'null' ]

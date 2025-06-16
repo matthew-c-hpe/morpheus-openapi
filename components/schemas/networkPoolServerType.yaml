@@ -4,22 +4,19 @@ properties:
     type: integer
     format: int64
   poolService: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   selectable: 
     type: boolean
   code: 
     type: string
   integrationCode: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   name: 
     type: string
   enabled: 
     type: boolean
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   optionTypes: 
     type: array
     items: 

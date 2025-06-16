@@ -27,13 +27,11 @@ properties:
     type: string
     format: date-time
   lastAccessDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   expirationDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   downloadCount: 
     type: integer
     format: int64

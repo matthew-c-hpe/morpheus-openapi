@@ -18,13 +18,11 @@ properties:
         format: int64
         description: Backup ID
       name: 
-        type: string
+        type: [ string, 'null' ]
         description: Backup Name
-    nullable: true
   containerId: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   container: 
     type: object
     properties: 
@@ -33,9 +31,8 @@ properties:
         format: int64
         description: Container ID
       name: 
-        type: string
+        type: [ string, 'null' ]
         description: Container Name
-    nullable: true
   instance: 
     type: object
     properties: 
@@ -44,35 +41,27 @@ properties:
         format: int64
         description: Instance ID
       name: 
-        type: string
+        type: [ string, 'null' ]
         description: Instance Name
-    nullable: true
   restoreToNew: 
     type: boolean
   status: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   errorMessage: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   startDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   endDate: 
-    type: string
+    type: [ string, 'null' ]
     format: date-time
-    nullable: true
   durationMillis: 
-    type: integer
+    type: [ integer, 'null' ]
     format: int64
-    nullable: true
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalStatusRef: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time

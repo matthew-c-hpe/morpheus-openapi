@@ -6,8 +6,7 @@ properties:
   name: 
     type: string
   description: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   account: 
     type: object
     properties: 
@@ -17,9 +16,8 @@ properties:
       name: 
         type: string
   forecastType: 
-    type: object
+    type: [ object, 'null' ]
     description: Forecast Model type
-    nullable: true
     properties: 
       id: 
         type: integer
@@ -71,28 +69,22 @@ properties:
   rollover: 
     type: boolean
   warningLimit: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   overLimit: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   externalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   internalId: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   createdById: 
     type: integer
     format: int64
   createdByName: 
     type: string
   updatedById: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   updatedByName: 
-    type: string
-    nullable: true
+    type: [ string, 'null' ]
   dateCreated: 
     type: string
     format: date-time
@@ -136,8 +128,6 @@ properties:
         type: object
         properties: 
           estimatedCost: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]
           lastCost: 
-            type: string
-            nullable: true
+            type: [ string, 'null' ]

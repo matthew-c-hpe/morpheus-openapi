@@ -14,9 +14,8 @@ properties:
     type: string
     description: The name of the option type for handy reference. By default a UUID will be used.
   description: 
-    type: string
+    type: [ string, 'null' ]
     description: Short description of the option type
-    nullable: true
   fieldName:
     type: string
     description: Field Name, the name for user input. This along with fieldContext determines the configuration property name.  The property key for when posting this option type to a JSON POST request
@@ -28,20 +27,17 @@ properties:
     type: string
     description: Field Label, the label for user input.
   fieldCode:
-    type: string
+    type: [ string, 'null' ]
     description: Localized Label, i18n code for the label
-    nullable: true
   placeHolder:
     type: string
     description: Any placeholder text when nothing is yet entered
   helpBlock: 
-    type: string
+    type: [ string, 'null' ]
     description: This is the explaination of the input that shows typically underneath the option
-    nullable: true
   helpBlockFieldCode: 
-    type: string
+    type: [ string, 'null' ]
     description: Localized Help Block, i18n code for the help block
-    nullable: true
   defaultValue:
     type: string
     description: The default value if no user entry is specified. This value should be passed to the desired JSON Map if nothing else is entered
@@ -81,17 +77,14 @@ properties:
     description: Exclude From Search
     default: false
   dependsOnCode: 
-    type: string
+    type: [ string, 'null' ]
     description: A fieldName that will trigger reloading this input
-    nullable: true
   visibleOnCode: 
-    type: string
+    type: [ string, 'null' ]
     description: A fieldName that will trigger visibility of this input
-    nullable: true
   verifyPattern:
     type: string
     description: Verify Pattern, A regexp string that validates the input, use (?i) to make the matcher case insensitive
   requireOnCode: 
-    type: string
+    type: [ string, 'null' ]
     description: A fieldName that will trigger required attribute of this input
-    nullable: true

@@ -4,9 +4,8 @@ properties:
     type: string
     description: Cluster Package name
   description: 
-    type: string
+    type: [ string, 'null' ]
     description: Cluster Package description
-    nullable: true
   code: 
     type: string
     description: Cluster Package code
